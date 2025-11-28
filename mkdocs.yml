@@ -15,14 +15,14 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-      primary: blue grey
+      primary: deep orange
       accent: teal
     - scheme: slate
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-      primary: blue grey
-      accent: teal
+      primary: deep orange
+      accent: brown
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -66,10 +66,11 @@ extra_javascript:
 plugins:
   - search:
   - glossary:
+  - mkdocs_quiz:
 extra:
   analytics:
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
+    property: G-YG16K7VJ8G
     feedback:
       title: Was this page helpful?
       ratings:
@@ -91,3 +92,22 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
+nav:
+  - Home: index.md
+  - Interactive Media:
+    - Syllabus: interactive_media/index.md
+    - Introduction to Interactive Media: interactive_media/introduction_to_interactive_media.md
+    - Interactive Media in Enterprises: interactive_media/interactive_media_in_enterprises.md
+  - Networking Systems:
+    - Overview: networking_systems/index.md
+  - CyberSecurity:
+    - Overview: cybersecurity/index.md
+  - Data Science:
+    - Overview: data_science/index.md
+  - Data Visualisation:
+    - Overview: data_visualisation/index.md
+  - Intelligent Systems:
+    - Overview: intelligent_systems/index.md
+  - Enterprise Project:
+    - Overview: enterprise_project/index.md
+  - Glossary : glossary.md
