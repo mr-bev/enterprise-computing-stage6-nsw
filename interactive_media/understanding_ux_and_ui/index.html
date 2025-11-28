@@ -1,0 +1,5617 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../interactive_media_in_enterprises/">
+      
+      
+        <link rel="next" href="../../networking_systems/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Understanding UX and UI - Enterprise Computing - Stage 6 - NSW</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-YG16K7VJ8G"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-YG16K7VJ8G",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-YG16K7VJ8G",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#week-3-understanding-user-experience-ux-and-user-interface-ui" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Enterprise Computing - Stage 6 - NSW" class="md-header__button md-logo" aria-label="Enterprise Computing - Stage 6 - NSW" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Enterprise Computing - Stage 6 - NSW
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Understanding UX and UI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="brown"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+  
+  <nav id="quiz-progress-mobile" class="quiz-progress-mobile md-nav" aria-label="Quiz Progress" style="display: none;">
+    <!-- mkdocs-quiz progress sidebar (mobile) -->
+    <div class="quiz-progress-bar">
+      <div class="quiz-progress-bar-incorrect" style="width: 0%"></div>
+      <div class="quiz-progress-bar-correct" style="width: 0%"></div>
+    </div>
+    <div data-md-component="quiz-progress">
+        <div class="quiz-correct-reset">
+          <span class="md-ellipsis">
+            Answered: <span class="quiz-progress-answered">0</span> / <span class="quiz-progress-total">0</span>
+          </span>
+          <span class="md-ellipsis">
+            Correct: <span class="quiz-progress-score">0</span> / <span class="quiz-progress-score-total">0</span>
+          </span>
+          <a href="#" class="quiz-reset-all-link" style="color: var(--md-primary-fg-color); text-decoration: none;">
+            Reset
+          </a>
+        </div>
+    </div>
+  </nav>
+
+  
+  
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Interactive Media
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../networking_systems/" class="md-tabs__link">
+          
+  
+  
+  Networking Systems
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../cybersecurity/" class="md-tabs__link">
+          
+  
+  
+  CyberSecurity
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../data_science/" class="md-tabs__link">
+          
+  
+  
+  Data Science
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../data_visualisation/" class="md-tabs__link">
+          
+  
+  
+  Data Visualisation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../intelligent_systems/" class="md-tabs__link">
+          
+  
+  
+  Intelligent Systems
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../enterprise_project/" class="md-tabs__link">
+          
+  
+  
+  Enterprise Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../glossary/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+  
+  
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Enterprise Computing - Stage 6 - NSW" class="md-nav__button md-logo" aria-label="Enterprise Computing - Stage 6 - NSW" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Enterprise Computing - Stage 6 - NSW
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interactive Media
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interactive Media
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Syllabus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction_to_interactive_media/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction to Interactive Media
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interactive_media_in_enterprises/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interactive Media in Enterprises
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Understanding UX and UI
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Understanding UX and UI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lesson Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning Objectives
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Success Criteria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syllabus-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syllabus Alignment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-part-1-what-are-ui-and-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Part 1: What are UI and UX?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Part 1: What are UI and UX?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-ui-and-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction to UI and UX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-relationship-between-ui-and-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Relationship Between UI and UX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-11-ui-vs-ux-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 1.1: UI vs UX Identification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-12-the-bad-uiux-hall-of-fame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 1.2: The Bad UI/UX Hall of Fame
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-part-2-ui-elements-and-design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Part 2: UI Elements and Design Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Part 2: UI Elements and Design Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-ui-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common UI Elements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-ui-design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key UI Design Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key UI Design Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Consistency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Feedback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-affordance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Affordance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Constraints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-visibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Visibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-21-ui-element-scavenger-hunt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 2.1: UI Element Scavenger Hunt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-22-design-principle-violations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 2.2: Design Principle Violations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-part-3-ux-principles-and-user-centred-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Part 3: UX Principles and User-Centred Design
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Part 3: UX Principles and User-Centred Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-core-ux-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Core UX Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-six-core-ux-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Six Core UX Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-user-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The User Journey
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-31-ux-principle-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 3.1: UX Principle Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-32-mapping-a-user-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 3.2: Mapping a User Journey
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-part-4-introduction-to-design-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Part 4: Introduction to Design Thinking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Part 4: Introduction to Design Thinking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-design-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Design Thinking?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-five-stages-of-design-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Five Stages of Design Thinking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Five Stages of Design Thinking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-empathise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1: Empathise
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-define" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2: Define
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-ideate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3: Ideate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-4-prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 4: Prototype
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-5-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 5: Test
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-design-thinking-matters-for-uxui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Design Thinking Matters for UX/UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-41-mini-design-thinking-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 4.1: Mini Design Thinking Challenge
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-part-5-applying-design-thinking-to-uxui-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Part 5: Applying Design Thinking to UX/UI Projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Part 5: Applying Design Thinking to UX/UI Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-design-thinking-to-uiux-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From Design Thinking to UI/UX Implementation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-tools-and-techniques-for-engaging-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Tools and Techniques for Engaging UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-design-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Design Techniques
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Design Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-visual-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Visual Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-responsive-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Responsive Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-progressive-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Progressive Disclosure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-white-space-negative-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. White Space (Negative Space)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-colour-psychology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Colour Psychology
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-51-critique-and-redesign" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 5.1: Critique and Redesign
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-52-design-thinking-vocabulary-journal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 5.2: Design Thinking Vocabulary Journal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding Check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teacher-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teacher Notes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Teacher Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#links-to-prior-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Links to Prior Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Networking Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking_systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CyberSecurity
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CyberSecurity
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cybersecurity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Visualisation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data Visualisation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data_visualisation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intelligent Systems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Intelligent Systems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intelligent_systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enterprise Project
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Enterprise Project
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enterprise_project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lesson Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Learning Objectives
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#success-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Success Criteria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syllabus-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syllabus Alignment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-part-1-what-are-ui-and-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Part 1: What are UI and UX?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Part 1: What are UI and UX?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-ui-and-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction to UI and UX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-relationship-between-ui-and-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Relationship Between UI and UX
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-11-ui-vs-ux-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 1.1: UI vs UX Identification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-12-the-bad-uiux-hall-of-fame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 1.2: The Bad UI/UX Hall of Fame
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-part-2-ui-elements-and-design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Part 2: UI Elements and Design Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Part 2: UI Elements and Design Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-ui-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common UI Elements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-ui-design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key UI Design Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key UI Design Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-consistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Consistency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Feedback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-affordance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Affordance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Constraints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-visibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Visibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-21-ui-element-scavenger-hunt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 2.1: UI Element Scavenger Hunt
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-22-design-principle-violations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 2.2: Design Principle Violations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-part-3-ux-principles-and-user-centred-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Part 3: UX Principles and User-Centred Design
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Part 3: UX Principles and User-Centred Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-core-ux-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Core UX Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-six-core-ux-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Six Core UX Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-user-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The User Journey
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-31-ux-principle-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 3.1: UX Principle Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-32-mapping-a-user-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 3.2: Mapping a User Journey
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-part-4-introduction-to-design-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Part 4: Introduction to Design Thinking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Part 4: Introduction to Design Thinking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-design-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Design Thinking?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-five-stages-of-design-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Five Stages of Design Thinking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Five Stages of Design Thinking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-empathise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1: Empathise
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-define" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2: Define
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-ideate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3: Ideate
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-4-prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 4: Prototype
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-5-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 5: Test
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-design-thinking-matters-for-uxui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Design Thinking Matters for UX/UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-41-mini-design-thinking-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 4.1: Mini Design Thinking Challenge
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-part-5-applying-design-thinking-to-uxui-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Content Part 5: Applying Design Thinking to UX/UI Projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Part 5: Applying Design Thinking to UX/UI Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-design-thinking-to-uiux-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From Design Thinking to UI/UX Implementation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-tools-and-techniques-for-engaging-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Tools and Techniques for Engaging UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-design-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Design Techniques
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Design Techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-visual-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Visual Hierarchy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-responsive-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Responsive Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-progressive-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Progressive Disclosure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-white-space-negative-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. White Space (Negative Space)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-colour-psychology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Colour Psychology
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-51-critique-and-redesign" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 5.1: Critique and Redesign
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-52-design-thinking-vocabulary-journal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Activity 5.2: Design Thinking Vocabulary Journal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding Check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teacher-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teacher Notes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Teacher Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#links-to-prior-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Links to Prior Learning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+
+  
+  <div id="quiz-progress-sidebar" aria-label="Quiz Progress" style="display: none;">
+    <!-- mkdocs-quiz progress sidebar (desktop) -->
+    <label class="md-nav__title">
+      <span class="md-nav__icon md-icon"></span>
+      Quiz Progress
+    </label>
+    <ul class="md-nav__list" data-md-component="quiz-progress">
+      <li class="md-nav__item">
+        <div class="md-nav__link">
+          <span class="md-ellipsis">
+            Answered: <span class="quiz-progress-answered">0</span> / <span class="quiz-progress-total">0</span> (<span class="quiz-progress-answered-percentage">0%</span>)
+          </span>
+        </div>
+      </li>
+      <li class="md-nav__item">
+        <div class="md-nav__link">
+          <div class="quiz-progress-bar">
+            <div class="quiz-progress-bar-incorrect" style="width: 0%"></div>
+            <div class="quiz-progress-bar-correct" style="width: 0%"></div>
+          </div>
+        </div>
+      </li>
+      <li class="md-nav__item">
+        <div class="md-nav__link quiz-correct-reset">
+          <span class="md-ellipsis">
+            Correct: <span class="quiz-progress-score">0</span> / <span class="quiz-progress-score-total">0</span> (<span class="quiz-progress-score-percentage">0%</span>)
+          </span>
+          <a href="#" class="quiz-reset-all-link" style="color: var(--md-primary-fg-color); text-decoration: none;">
+            Reset
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="week-3-understanding-user-experience-ux-and-user-interface-ui">Week 3: Understanding User Experience (UX) and User Interface (UI)</h1>
+<h2 id="lesson-overview">Lesson Overview</h2>
+<div class="admonition info">
+<p class="admonition-title">Lesson Details</p>
+<p><strong>Duration:</strong> 90-120 minutes<br />
+<strong>Focus:</strong> Understanding the distinction between UI and UX, and applying design thinking principles<br />
+<strong>Mode:</strong> Self-paced with structured activities<br />
+<strong>Prerequisites:</strong> </p>
+<ul>
+<li>Completion of Week 1: Introduction to Interactive Media</li>
+<li>Completion of Week 2: Interactive Media in Enterprise</li>
+<li>Access to a web browser and internet connection</li>
+<li>A notebook or digital document for recording observations</li>
+</ul>
+</div>
+<hr />
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this lesson, you will be able to:</p>
+<ol>
+<li><strong>Understand</strong> the fundamental concepts of User Interface (UI) and User Experience (UX) and how they interact within interactive media systems</li>
+<li><strong>Analyse</strong> the effectiveness of UI design elements and their impact on user experience across different digital platforms</li>
+<li><strong>Evaluate</strong> digital products using established UX principles and design criteria</li>
+<li><strong>Apply</strong> the design thinking methodology to identify user needs and develop user-centred solutions</li>
+<li><strong>Create</strong> design critiques and improvement recommendations based on UX/UI best practices</li>
+</ol>
+<hr />
+<h2 id="success-criteria">Success Criteria</h2>
+<div class="admonition success">
+<p class="admonition-title">I will demonstrate my learning by...</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Defining and distinguishing:</strong> Writing clear definitions of UI and UX in my own words and explaining their relationship with at least 2 real-world examples</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Identifying UI elements:</strong> Correctly naming and categorising at least 5 different UI elements (from different categories: input, navigation, information, containers) in any digital interface</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Applying design principles:</strong> Analysing an app or website using at least 3 UI design principles (consistency, feedback, affordance, constraints, visibility) with specific evidence for each</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Evaluating with UX criteria:</strong> Completing a UX evaluation of one digital product against at least 4 of the 6 principles (usability, accessibility, desirability, findability, credibility, value) with observable examples and ratings</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Executing design thinking:</strong> Successfully working through all 5 stages of the design thinking process (empathise, define, ideate, prototype, test) for a given problem, including a user-focused problem statement and at least 8 solution ideas</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Creating justified critiques:</strong> Producing a design critique that identifies 3 specific UI or UX issues using correct terminology, provides evidence for each, and proposes improvements based on design principles</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>Communicating with terminology:</strong> Using industry-standard UX/UI vocabulary accurately throughout all activities (demonstrated in my vocabulary journal with 10 terms defined in my own words with examples)</li>
+</ul>
+</div>
+<hr />
+<h2 id="syllabus-alignment">Syllabus Alignment</h2>
+<div class="admonition note">
+<p class="admonition-title">Syllabus Coverage: Interactive Media and User Experience</p>
+<ul>
+<li>✓ Explain how the user interface (UI) impacts on the user experience (UX)</li>
+<li>✓ Apply design thinking to develop a front-end, web-based interactive media system incorporating UX and UI principles</li>
+<li>✓ Apply design tools and techniques to develop an engaging UI</li>
+</ul>
+</div>
+<hr />
+<h2 id="content-part-1-what-are-ui-and-ux">Content Part 1: What are UI and UX?</h2>
+<h3 id="introduction-to-ui-and-ux">Introduction to UI and UX</h3>
+<p><strong>User Interface (UI)</strong> and <strong>User Experience (UX)</strong> are two closely related but distinct concepts in interactive media design.</p>
+<pre class="mermaid"><code>graph TD
+    A[Interactive Media System] --&gt; B[User Interface - UI]
+    A --&gt; C[User Experience - UX]
+    B --&gt; D[Visual Elements]
+    B --&gt; E[Interactive Elements]
+    C --&gt; F[Overall Feeling]
+    C --&gt; G[User Journey]
+    D --&gt; H[Colours, Typography, Icons]
+    E --&gt; I[Buttons, Forms, Menus]
+    F --&gt; J[Satisfaction, Frustration, Delight]
+    G --&gt; K[Ease of Use, Efficiency]</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">Key Definitions</p>
+<p><strong>User Interface (UI):</strong> The visual and interactive elements that users see and interact with in a digital product. Think of it as the "look and feel" — buttons, menus, icons, typography, colour schemes, and layouts.</p>
+<p><strong>User Experience (UX):</strong> The overall experience a user has when interacting with a product or system. It encompasses how users feel, how easy it is to accomplish tasks, and whether the product meets their needs.</p>
+</div>
+<h3 id="the-relationship-between-ui-and-ux">The Relationship Between UI and UX</h3>
+<p>Think of UI and UX like a restaurant:</p>
+<ul>
+<li><strong>UI</strong> is the presentation of the food, the décor, the menu design, and the table settings</li>
+<li><strong>UX</strong> is the entire dining experience — how welcoming the staff are, how long you wait for food, whether the menu is easy to understand, and whether you'd recommend the restaurant to friends</li>
+</ul>
+<pre class="mermaid"><code>graph TD
+    A[Interactive Media System] --&gt; B[Great UI + Great UX]
+    A --&gt; C[Great UI + Poor UX]
+    A --&gt; D[Poor UI + Great UX]
+    A --&gt; E[Poor UI + Poor UX]
+
+    B --&gt; F[🎯 Goal: Aim for this!]
+    C --&gt; G[⚠️ Looks good but frustrates users]
+    D --&gt; H[🔶 Works well but not appealing]
+    E --&gt; I[❌ Avoid at all costs]
+
+    style B fill:#90EE90
+    style C fill:#FFB6C6
+    style D fill:#FFD700
+    style E fill:#FF6B6B</code></pre>
+<p><strong>Real-World Examples:</strong></p>
+<ul>
+<li><strong>Great UI + Great UX:</strong> Spotify - Beautiful interface, seamless music discovery</li>
+<li><strong>Great UI + Poor UX:</strong> Some designer portfolio sites - Stunning visuals but hard to navigate</li>
+<li><strong>Poor UI + Great UX:</strong> Wikipedia - Plain design but information is easy to find</li>
+<li><strong>Poor UI + Poor UX:</strong> Poorly designed government forms - Confusing and difficult to complete</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Important Distinction</p>
+<ul>
+<li>You can have a beautiful UI (great visual design) but poor UX (frustrating to use)</li>
+<li>You can have a simple UI but excellent UX (easy and pleasant to use)</li>
+<li>The goal is to achieve both good UI <strong>and</strong> good UX</li>
+</ul>
+</div>
+<h3 id="activity-11-ui-vs-ux-identification">📝 Activity 1.1: UI vs UX Identification</h3>
+<div class="admonition note">
+<p class="admonition-title">Explore and Analyse UI and UX</p>
+<p><strong>Duration:</strong> 10 minutes</p>
+<p><strong>Learning Goal:</strong> Distinguish between UI elements and UX aspects in real applications</p>
+<p>Open your favourite app or website (suggestions: Instagram, YouTube, Spotify, Netflix).</p>
+<p>In your notebook, create a two-column table:</p>
+<table>
+<thead>
+<tr>
+<th>UI Elements I Can See</th>
+<th>UX Aspects I Experience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Example: Search icon at the top</td>
+<td>Example: I can quickly find what I'm looking for</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>List at least <strong>5 UI elements</strong> and <strong>5 UX aspects</strong> from your chosen platform.</p>
+<p><strong>Success Check:</strong> You've completed this when you have 5 entries in each column AND your UI column contains only things you can see/click, while your UX column describes feelings or experiences.</p>
+<div class="admonition question">
+<p class="admonition-title">Reflection Questions</p>
+<ol>
+<li>Which matters more to you as a user — how the app looks or how it works?</li>
+<li>Can you think of a time when a beautiful app frustrated you? Why?</li>
+<li>Did any UI elements you identified directly contribute to the UX aspects you listed?</li>
+</ol>
+</div>
+</div>
+<h3 id="activity-12-the-bad-uiux-hall-of-fame">📝 Activity 1.2: The Bad UI/UX Hall of Fame</h3>
+<div class="admonition note">
+<p class="admonition-title">Identify Bad UI/UX</p>
+<p><strong>Duration:</strong> 10 minutes</p>
+<p><strong>Learning Goal:</strong> Recognise what makes UI/UX ineffective and articulate improvements</p>
+<p>Search online for "bad UI design examples" or "UX fails".</p>
+<p>Find <strong>3 examples</strong> and for each one, create this analysis:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Your Analysis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Screenshot/URL</td>
+<td>[Link or description]</td>
+</tr>
+<tr>
+<td>Is this a UI or UX problem?</td>
+<td>[Identify which]</td>
+</tr>
+<tr>
+<td>Specific issue</td>
+<td>[What exactly is wrong?]</td>
+</tr>
+<tr>
+<td>Why it's problematic</td>
+<td>[Impact on the user]</td>
+</tr>
+<tr>
+<td>How to improve it</td>
+<td>[Your solution]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Success Check:</strong> You've completed this when each analysis clearly identifies whether it's a UI or UX issue AND provides a specific, actionable improvement.</p>
+<div class="admonition example">
+<p class="admonition-title">Example Analysis</p>
+<p><strong>Problem:</strong> A website with white text on a yellow background<br />
+<strong>UI or UX?</strong> This is primarily a UI issue (visual design)<br />
+<strong>Specific issue:</strong> Insufficient colour contrast making text illegible<br />
+<strong>Why problematic:</strong> Users struggle to read content, causing eye strain and frustration (leading to UX problems)<br />
+<strong>Solution:</strong> Use dark grey (#333333) text on white background to meet WCAG AA contrast standards (4.5:1 ratio)</p>
+</div>
+</div>
+<hr />
+<h2 id="content-part-2-ui-elements-and-design-principles">Content Part 2: UI Elements and Design Principles</h2>
+<h3 id="common-ui-elements">Common UI Elements</h3>
+<p>User interfaces are built from various components. Understanding these helps you analyse and create effective designs. These may also be called <strong>components</strong> in some UI frameworks.</p>
+<pre class="mermaid"><code>mindmap
+  root((UI Elements))
+    Input Controls
+      Buttons
+      Text fields
+      Checkboxes
+      Radio buttons
+      Dropdowns
+      Toggles
+    Navigation
+      Menus
+      Breadcrumbs
+      Tabs
+      Search bars
+      Pagination
+    Information Display
+      Icons
+      Images
+      Tooltips
+      Progress bars
+      Notifications
+    Containers
+      Cards
+      Accordions
+      Modals
+      Panels</code></pre>
+<div class="admonition info">
+<p class="admonition-title">UI Element Categories</p>
+<ol>
+<li><strong>Input Controls:</strong> Allow users to input information (buttons, text fields, checkboxes)</li>
+<li><strong>Navigation Components:</strong> Help users move around (menus, tabs, search bars)</li>
+<li><strong>Informational Components:</strong> Communicate information (icons, tooltips, progress bars)</li>
+<li><strong>Containers:</strong> Organise content (cards, panels, modals)</li>
+</ol>
+</div>
+<h3 id="key-ui-design-principles">Key UI Design Principles</h3>
+<h4 id="1-consistency">1. <strong>Consistency</strong></h4>
+<p>Elements should look and behave similarly throughout the interface.</p>
+<ul>
+<li>Same colours for similar actions (e.g., all "delete" buttons are red)</li>
+<li>Same button styles across all pages</li>
+<li>Consistent terminology (don't call it "cart" on one page and "basket" on another)</li>
+<li>Users learn patterns once</li>
+</ul>
+<h4 id="2-feedback">2. <strong>Feedback</strong></h4>
+<p>The system should inform users about what's happening.</p>
+<ul>
+<li>Loading spinners when processing</li>
+<li>Success messages after completing actions</li>
+<li>Error messages when something goes wrong</li>
+<li>Visual changes when hovering over clickable elements</li>
+<li>Users know what's happening</li>
+</ul>
+<h4 id="3-affordance">3. <strong>Affordance</strong></h4>
+<p>Design should suggest how to use elements.</p>
+<ul>
+<li>Buttons should look clickable (raised appearance, cursor changes)</li>
+<li>Text fields should look like you can type in them</li>
+<li>Sliders should look draggable</li>
+<li>Users know how to interact</li>
+</ul>
+<h4 id="4-constraints">4. <strong>Constraints</strong></h4>
+<p>Prevent errors by limiting options.</p>
+<ul>
+<li>Disable "Submit" button until form is complete</li>
+<li>Greyed-out unavailable options</li>
+<li>Date pickers that only allow future dates for bookings</li>
+<li>Users make fewer errors</li>
+</ul>
+<h4 id="5-visibility">5. <strong>Visibility</strong></h4>
+<p>Important information and actions should be easily discoverable.</p>
+<ul>
+<li>Primary actions are prominent (larger, brighter colours)</li>
+<li>Key information is above the fold (visible without scrolling)</li>
+<li>Search functions are easily found
+Users find what they need</li>
+</ul>
+<h3 id="activity-21-ui-element-scavenger-hunt">📝 Activity 2.1: UI Element Scavenger Hunt</h3>
+<div class="admonition note">
+<p class="admonition-title">UI Elements</p>
+<p><strong>Duration:</strong> 15 minutes</p>
+<p><strong>Learning Goal:</strong> Identify UI elements in context and evaluate their effectiveness using design principles</p>
+<p>Visit <strong>three different websites</strong> (e.g., a news site, an e-commerce site, a social media platform).</p>
+<p>For each site, create a table documenting:</p>
+<table>
+<thead>
+<tr>
+<th>UI Element Type</th>
+<th>Specific Example</th>
+<th>Design Principle Used</th>
+<th>Effective? (Y/N)</th>
+<th>Justification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Button</td>
+<td>"Add to Cart" button</td>
+<td>Affordance</td>
+<td>Y</td>
+<td>Raised appearance with shadow, changes to darker blue on hover, cursor becomes pointer</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Find at least <strong>8 different UI elements</strong> across the three sites.</p>
+<p><strong>Success Check:</strong> You've completed this when you have:</p>
+<ul>
+<li>8 different element/component types (don't repeat "button" 8 times)</li>
+<li>At least 3 different design principles referenced</li>
+<li>Specific justifications (not just "looks good" or "works well")</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Sites to Consider</p>
+<ul>
+<li>News: ABC News, BBC, The Guardian</li>
+<li>E-commerce: Amazon, eBay, local shopping sites</li>
+<li>Social Media: Twitter/X, Reddit, LinkedIn</li>
+<li>Look at UI Frameworks to help you understand components (e.g., <a href="https://m3.material.io/components">Material Design</a>, <a href="https://getbootstrap.com/docs/5.3/components">Bootstrap</a>, <a href="https://quasar.dev/components">Quasar</a>)</li>
+</ul>
+</div>
+</div>
+<h3 id="activity-22-design-principle-violations">📝 Activity 2.2: Design Principle Violations</h3>
+<div class="admonition note">
+<p class="admonition-title">Identify Problems and Propose Solutions</p>
+<p><strong>Duration:</strong> 10 minutes</p>
+<p><strong>Learning Goal:</strong> Apply design principles to identify problems and propose solutions</p>
+<p>Look at this scenario:</p>
+<blockquote>
+<p>A banking app has a "Transfer Money" button in green and a "Delete Payee" button also in green. Both buttons are the same size and placed next to each other.</p>
+</blockquote>
+<p><strong>Your task:</strong></p>
+<p>Create a table with this analysis:</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Your Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Which design principle(s) are violated?</td>
+<td></td>
+</tr>
+<tr>
+<td>Why is this dangerous for users?</td>
+<td></td>
+</tr>
+<tr>
+<td>What could realistically happen?</td>
+<td></td>
+</tr>
+<tr>
+<td>Redesign: What colour should each button be?</td>
+<td></td>
+</tr>
+<tr>
+<td>Redesign: What size should each button be?</td>
+<td></td>
+</tr>
+<tr>
+<td>Redesign: What other changes would help?</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Success Check:</strong> You've completed this when you:</p>
+<ul>
+<li>Identify at least 2 violated principles</li>
+<li>Explain a realistic negative consequence</li>
+<li>Propose a complete redesign addressing all identified issues</li>
+</ul>
+<div class="admonition question">
+<p class="admonition-title">Think About</p>
+<ul>
+<li>What could happen if a user makes a mistake?</li>
+<li>How could colour, size, position, and confirmation dialogs be used better?</li>
+<li>Which action is more common? Which is more dangerous?</li>
+</ul>
+</div>
+<details class="example">
+<summary>UI Design</summary>
+<p><strong>Poor UI Design</strong></p>
+<p><img alt="Bad UI" src="../assets/bad_ui.png" width="400" /></p>
+<p><strong>Better UI Design</strong></p>
+<p><img alt="Better UI" src="../assets/better_ui.png" width="400" /></p>
+</details>
+</div>
+<hr />
+<h2 id="content-part-3-ux-principles-and-user-centred-design">Content Part 3: UX Principles and User-Centred Design</h2>
+<h3 id="the-core-ux-principles">The Core UX Principles</h3>
+<p>User Experience design focuses on making products that are valuable and pleasant to use. Six key principles guide UX design:</p>
+<h3 id="the-six-core-ux-principles">The Six Core UX Principles</h3>
+<p>All user-centred design should address these six principles:</p>
+<table>
+<thead>
+<tr>
+<th>UX Principle</th>
+<th>Definition</th>
+<th>Key Questions to Ask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Usability</strong></td>
+<td>How easy and intuitive the product is to use</td>
+<td>• Can users complete tasks efficiently?<br>• Are there clear pathways to goals?<br>• Is the learning curve reasonable?</td>
+</tr>
+<tr>
+<td><strong>Accessibility</strong></td>
+<td>Whether the product can be used by people with diverse abilities</td>
+<td>• Can people with visual impairments use it? (screen readers, high contrast)<br>• Can people with motor disabilities navigate it? (keyboard navigation, large click targets)<br>• Is it usable by people with cognitive differences?</td>
+</tr>
+<tr>
+<td><strong>Desirability</strong></td>
+<td>The emotional appeal and aesthetic quality</td>
+<td>• Does the design evoke positive emotions?<br>• Is it visually appealing?<br>• Does it create brand connection?</td>
+</tr>
+<tr>
+<td><strong>Findability</strong></td>
+<td>How easily users can locate information and features</td>
+<td>• Is navigation logical?<br>• Is search functionality effective?<br>• Is information architecture clear?</td>
+</tr>
+<tr>
+<td><strong>Credibility</strong></td>
+<td>Whether users trust the product</td>
+<td>• Does it look professional?<br>• Is information accurate and sourced?<br>• Are there trust signals (security badges, testimonials)?</td>
+</tr>
+<tr>
+<td><strong>Value</strong></td>
+<td>Whether the product delivers meaningful benefits</td>
+<td>• Does it solve a real problem?<br>• Is it worth the user's time and effort?<br>• Does it deliver on its promises?</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Remember</p>
+<p>A product needs to address <strong>all six principles</strong> to provide excellent UX. Strength in one area cannot fully compensate for weakness in another.</p>
+</div>
+<h3 id="the-user-journey">The User Journey</h3>
+<p>UX designers think about the complete path a user takes, from discovering a product to achieving their goal.</p>
+<p><img alt="User Journey Online Shopping" src="../assets/user_journey_shopping.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Understanding Pain Points</p>
+<p>In the journey above, notice the rating drops with customer retention. The pain points show:</p>
+<ul>
+<li>Unclear onboarding</li>
+<li>Delays in support</li>
+</ul>
+<p>Good UX design identifies and fixes these "pain points."</p>
+</div>
+<h3 id="activity-31-ux-principle-analysis">📝 Activity 3.1: UX Principle Analysis</h3>
+<div class="admonition note">
+<p class="admonition-title">Evaluate UI Principles</p>
+<p><strong>Duration:</strong> 15 minutes</p>
+<p><strong>Learning Goal:</strong> Evaluate digital products systematically using all UX principles with evidence-based reasoning</p>
+<p>Choose an app or website you use regularly. Evaluate it against all <strong>6 UX principles</strong>.</p>
+<p>Create a rating table:</p>
+<table>
+<thead>
+<tr>
+<th>UX Principle</th>
+<th>Rating (1-5)</th>
+<th>Specific Evidence/Example</th>
+<th>Improvement Suggestion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Usability</td>
+<td>4</td>
+<td>Main tasks completed in 2-3 clicks, but checkout requires 5 separate pages</td>
+<td>Combine shipping and payment on one page with clear progress indicator</td>
+</tr>
+<tr>
+<td>Accessibility</td>
+<td>3</td>
+<td>Images have alt text, but colour contrast on grey buttons is only 2.8:1 (fails WCAG)</td>
+<td>Change button colour to darker shade to achieve 4.5:1 contrast ratio</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Success Check:</strong> You've completed this when you:</p>
+<ul>
+<li>Have rated all 6 principles</li>
+<li>Provided specific, observable evidence (not opinions like "I like it")</li>
+<li>Given concrete improvement suggestions for any principle rated 3 or below</li>
+<li>Can explain your rating to someone else using only the evidence you've documented</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Rating Guide</p>
+<ul>
+<li>5 = Excellent (industry-leading, no noticeable issues)</li>
+<li>4 = Good (works well with minor issues)</li>
+<li>3 = Acceptable (functional but clear room for improvement)</li>
+<li>2 = Needs improvement (significant problems impacting use)</li>
+<li>1 = Poor (fundamental failures, nearly unusable)</li>
+</ul>
+</div>
+</div>
+<h3 id="activity-32-mapping-a-user-journey">📝 Activity 3.2: Mapping a User Journey</h3>
+<div class="admonition note">
+<p class="admonition-title">User Experience Analysis</p>
+<p><strong>Duration:</strong> 15 minutes</p>
+<p><strong>Learning Goal:</strong> Analyse the complete user experience by documenting and evaluating each step of a common task</p>
+<p>Think about a task you do regularly online (examples: ordering food delivery, booking a movie ticket, creating a social media post).</p>
+<p><strong>Map out your user journey:</strong></p>
+<ol>
+<li>List each step from start to finish (aim for 6-10 steps)</li>
+<li>Rate your satisfaction at each step (1-5, where 5 is very satisfied)</li>
+<li>Identify your biggest "pain point" (lowest satisfaction)</li>
+<li>Explain why it's problematic</li>
+<li>Propose one specific improvement</li>
+</ol>
+<p>Create your journey map like this:</p>
+<table>
+<thead>
+<tr>
+<th>Step #</th>
+<th>Action</th>
+<th>Satisfaction (1-5)</th>
+<th>Issues Noted</th>
+<th>Emotional Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Open app</td>
+<td>5</td>
+<td>None</td>
+<td>Confident, ready to order</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Search for restaurant</td>
+<td>2</td>
+<td>Search is slow (8+ seconds), returns irrelevant results, no filters available</td>
+<td>Frustrated, impatient</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Select restaurant</td>
+<td>4</td>
+<td>Works well once I find it</td>
+<td>Relieved</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Success Check:</strong> You've completed this when you:</p>
+<ul>
+<li>Have documented the complete journey from start to finish</li>
+<li>Identified which step has the lowest satisfaction score</li>
+<li>Explained the root cause of the problem (not just "it's bad")</li>
+<li>Proposed a testable improvement (something measurable)</li>
+</ul>
+</div>
+<hr />
+<h2 id="content-part-4-introduction-to-design-thinking">Content Part 4: Introduction to Design Thinking</h2>
+<h3 id="what-is-design-thinking">What is Design Thinking?</h3>
+<p><strong>Design thinking</strong> is a problem-solving approach that puts the user at the centre of the process. It's used by designers, engineers, and entrepreneurs to create innovative solutions.</p>
+<pre class="mermaid"><code>graph TD
+    A((Design Thinking Process)) --&gt; B[1. Empathise]
+    B --&gt; C[2. Define]
+    C --&gt; D[3. Ideate]
+    D --&gt; E[4. Prototype]
+    E --&gt; F[5. Test]
+    F --&gt; G{Meets user needs?}
+    G --&gt;|No| B
+    G --&gt;|Yes| H((Implement Solution))
+
+    style A fill:#E3F2FD
+    style B fill:#FFE0B2
+    style C fill:#F8BBD0
+    style D fill:#C5E1A5
+    style E fill:#B2DFDB
+    style F fill:#D1C4E9
+    style H fill:#90EE90</code></pre>
+<h3 id="the-five-stages-of-design-thinking">The Five Stages of Design Thinking</h3>
+<h4 id="stage-1-empathise">Stage 1: Empathise</h4>
+<div class="admonition info">
+<p><strong>Goal:</strong> Understand the user's needs, experiences, and motivations</p>
+<p><strong>Methods:</strong></p>
+<ul>
+<li>Observe users in their natural environment</li>
+<li>Conduct interviews</li>
+<li>Experience the problem yourself</li>
+<li>Gather data about user behaviour</li>
+</ul>
+<p><strong>Example:</strong> Before redesigning a school canteen app, watch students during lunch. Notice where they struggle, what frustrates them, and what they say they want.</p>
+</div>
+<h4 id="stage-2-define">Stage 2: Define</h4>
+<div class="admonition info">
+<p><strong>Goal:</strong> Clearly articulate the problem you're trying to solve</p>
+<p><strong>Methods:</strong></p>
+<ul>
+<li>Analyse research from empathise stage</li>
+<li>Identify patterns and insights</li>
+<li>Create a problem statement</li>
+<li>Focus on user needs, not solutions</li>
+</ul>
+<p><strong>Example Problem Statement:</strong> "Students need a faster way to order food during their 30-minute lunch break because the current queue system means they often miss out on eating or socialising."</p>
+</div>
+<h4 id="stage-3-ideate">Stage 3: Ideate</h4>
+<div class="admonition info">
+<p><strong>Goal:</strong> Generate a wide range of possible solutions</p>
+<p><strong>Methods:</strong></p>
+<ul>
+<li>Brainstorming sessions</li>
+<li>Mind mapping</li>
+<li>"How might we..." questions</li>
+<li>Challenge assumptions</li>
+<li>Encourage wild ideas</li>
+</ul>
+<p><strong>Key Rule:</strong> Quantity over quality at this stage. Don't judge ideas yet!</p>
+<p><strong>Example Ideas:</strong></p>
+<ul>
+<li>Pre-order from home room</li>
+<li>QR code ordering at tables</li>
+<li>Express queue for grab-and-go items</li>
+<li>Dedicated app with loyalty points</li>
+<li>AI-powered menu suggestions</li>
+</ul>
+</div>
+<h4 id="stage-4-prototype">Stage 4: Prototype</h4>
+<div class="admonition info">
+<p><strong>Goal:</strong> Build quick, low-cost versions of potential solutions</p>
+<p><strong>Methods:</strong></p>
+<ul>
+<li>Paper sketches</li>
+<li>Wireframes</li>
+<li>Clickable mockups</li>
+<li>Physical models</li>
+<li>Role-playing scenarios</li>
+</ul>
+<p><strong>Remember:</strong> Prototypes should be quick and cheap! You're testing ideas, not building the final product.</p>
+<p><strong>Example:</strong> Draw a paper version of the app screens. Include buttons, menus, and basic layout.</p>
+</div>
+<h4 id="stage-5-test">Stage 5: Test</h4>
+<div class="admonition info">
+<p><strong>Goal:</strong> Get feedback from real users on your prototypes</p>
+<p><strong>Methods:</strong></p>
+<ul>
+<li>User testing sessions</li>
+<li>Observe users interacting with prototype</li>
+<li>Ask questions and gather feedback</li>
+<li>Identify what works and what doesn't</li>
+</ul>
+<p><strong>Important:</strong> Testing often reveals new insights, sending you back to earlier stages. This is normal and valuable!</p>
+<p><strong>Example:</strong> Show the paper prototype to 5 students. Watch them try to complete an order. Note where they get confused.</p>
+</div>
+<h3 id="why-design-thinking-matters-for-uxui">Why Design Thinking Matters for UX/UI</h3>
+<p>Design thinking ensures that:</p>
+<ol>
+<li>Solutions are based on real user needs, not assumptions</li>
+<li>Multiple ideas are explored before committing to one</li>
+<li>Solutions are tested and refined based on feedback</li>
+<li>The final product genuinely improves the user experience</li>
+</ol>
+<h3 id="activity-41-mini-design-thinking-challenge">📝 Activity 4.1: Mini Design Thinking Challenge</h3>
+<div class="admonition note">
+<p class="admonition-title">Real World Problem</p>
+<p><strong>Duration:</strong> 25 minutes</p>
+<p><strong>Learning Goal:</strong> Apply all five stages of design thinking to solve a real problem with user-centred solutions</p>
+<p><strong>Scenario:</strong> Your school library has a problem — students can't find books easily because the catalogue system is confusing.</p>
+<p>Work through the <strong>5 stages of design thinking</strong> to solve this problem. Document each stage clearly.</p>
+<p><strong>1. Empathise (5 minutes)</strong></p>
+<p>Create a list answering these questions:</p>
+<ul>
+<li>What are 3 specific frustrations students might have? (Be specific: "unclear search results" not just "it's confusing")</li>
+<li>Who are the different types of users? (Consider: casual readers, students doing research, students with disabilities, international students, etc.)</li>
+<li>What do these different users need from a library catalogue?</li>
+</ul>
+<p><strong>Success Check:</strong> You have at least 3 specific frustrations AND considered at least 3 different user types.</p>
+<p><strong>2. Define (3 minutes)</strong></p>
+<p>Write a problem statement following this formula:</p>
+<p><strong>[User type] needs [need] because [insight].</strong></p>
+<p>Example: "Year 11 students need to quickly find relevant research materials because they have limited time between classes and assignments are often due within days."</p>
+<p><strong>Success Check:</strong> Your problem statement focuses on the user's need, not on a solution, and explains why this matters.</p>
+<p><strong>3. Ideate (7 minutes)</strong></p>
+<p>Brainstorm at least <strong>10 different solutions</strong>. Use these prompts to help:</p>
+<ul>
+<li>What if we completely removed the current system?</li>
+<li>What if we used technology that doesn't exist yet?</li>
+<li>What do other libraries do?</li>
+<li>How would a 5-year-old solve this?</li>
+<li>What's the most expensive solution? The cheapest?</li>
+</ul>
+<p><strong>Success Check:</strong> You have 10+ ideas, including at least 2 that seem unrealistic or "wild."</p>
+<p><strong>4. Prototype (5 minutes)</strong></p>
+<p>Choose your <strong>best idea</strong> (most likely to solve the problem AND feasible to implement).</p>
+<p>Create a sketch or detailed description including:</p>
+<ul>
+<li>Main features (list at least 3)</li>
+<li>How students would interact with it (step-by-step)</li>
+<li>What information it would show</li>
+<li>What makes this better than the current system</li>
+</ul>
+<p><strong>Success Check:</strong> Someone else could understand and test your prototype based on your description/sketch.</p>
+<p><strong>5. Test (5 minutes)</strong></p>
+<p>Write down:</p>
+<ul>
+<li>3 questions you would ask students to test if your solution works</li>
+<li>2 tasks you would ask them to complete</li>
+<li>What you would observe to determine success</li>
+</ul>
+<p>Example: "Can you show me how you would find a book about the Industrial Revolution? I'll watch to see if you can complete this in under 2 minutes without asking for help."</p>
+<p><strong>Success Check:</strong> Your test plan would reveal whether users can actually use your solution successfully.</p>
+<div class="admonition success">
+<p class="admonition-title">Reflection</p>
+<p>After completing all stages, answer:</p>
+<ol>
+<li>Which stage was hardest? Why?</li>
+<li>Which was most valuable? Why?</li>
+<li>Did this process lead you to a different solution than you would have chosen immediately?</li>
+<li>What would you do differently next time?</li>
+</ol>
+</div>
+</div>
+<hr />
+<h2 id="content-part-5-applying-design-thinking-to-uxui-projects">Content Part 5: Applying Design Thinking to UX/UI Projects</h2>
+<h3 id="from-design-thinking-to-uiux-implementation">From Design Thinking to UI/UX Implementation</h3>
+<p>Now that you understand design thinking, let's see how it specifically applies to creating user interfaces and experiences.</p>
+<pre class="mermaid"><code>flowchart TD
+    A[Design Thinking Process] --&gt; B[Creates]
+    B --&gt; C[User-Centred Requirements]
+    C --&gt; D[Information Architecture]
+    C --&gt; E[Interaction Patterns]
+    C --&gt; F[Visual Design]
+
+    D --&gt; G[UI Wireframes]
+    E --&gt; G
+    F --&gt; G
+
+    G --&gt; H[Interactive Prototype]
+    H --&gt; I[User Testing]
+    I --&gt; J{Successful?}
+    J --&gt;|No| K[Iterate Design]
+    K --&gt; G
+    J --&gt;|Yes| L[Final Implementation]
+
+    style A fill:#E3F2FD
+    style L fill:#90EE90</code></pre>
+<h3 id="design-tools-and-techniques-for-engaging-ui">Design Tools and Techniques for Engaging UI</h3>
+<p>When creating user interfaces, designers use various tools and techniques:</p>
+<div class="admonition example">
+<p class="admonition-title">Common Design Tools</p>
+<p><strong>Wireframing Tools:</strong></p>
+<ul>
+<li>Figma (free, browser-based)</li>
+<li>Adobe XD</li>
+<li>Sketch</li>
+<li>Balsamiq</li>
+<li>Even pen and paper!</li>
+</ul>
+<p><strong>Prototyping Tools:</strong></p>
+<ul>
+<li>Figma (interactive prototypes)</li>
+<li>InVision</li>
+<li>Marvel</li>
+<li>Axure</li>
+</ul>
+<p><strong>Design Systems:</strong></p>
+<ul>
+<li>Material Design (Google)</li>
+<li>Human Interface Guidelines (Apple)</li>
+<li>Fluent Design (Microsoft)</li>
+</ul>
+</div>
+<h3 id="key-design-techniques">Key Design Techniques</h3>
+<h4 id="1-visual-hierarchy">1. <strong>Visual Hierarchy</strong></h4>
+<p>Guide users' attention to the most important elements first.</p>
+<p><strong>Techniques:</strong></p>
+<ul>
+<li>Size: Larger elements attract attention</li>
+<li>Colour: Bright or contrasting colours stand out</li>
+<li>Position: Top-left is typically scanned first</li>
+<li>Whitespace: Space around elements makes them prominent</li>
+</ul>
+<h4 id="2-responsive-design">2. <strong>Responsive Design</strong></h4>
+<p>Ensure the interface works well on different screen sizes.</p>
+<pre class="mermaid"><code>graph LR
+    A[Single Design] --&gt; B[Mobile View&lt;br/&gt;320-480px]
+    A --&gt; C[Tablet View&lt;br/&gt;768-1024px]
+    A --&gt; D[Desktop View&lt;br/&gt;1024px+]
+
+    B --&gt; E[Simplified navigation&lt;br/&gt;Stacked layout]
+    C --&gt; F[Expanded menus&lt;br/&gt;Multi-column layout]
+    D --&gt; G[Full navigation&lt;br/&gt;Complex layouts]</code></pre>
+<h4 id="3-progressive-disclosure">3. <strong>Progressive Disclosure</strong></h4>
+<p>Only show information when users need it, avoiding overwhelming them.</p>
+<p><strong>Example:</strong> An advanced search that starts with one text box, but reveals additional filters when clicked.</p>
+<h4 id="4-white-space-negative-space">4. <strong>White Space (Negative Space)</strong></h4>
+<p>Empty space isn't wasted space — it improves readability and focus.</p>
+<h4 id="5-colour-psychology">5. <strong>Colour Psychology</strong></h4>
+<p>Choose colours that convey the right message:</p>
+<ul>
+<li><strong>Blue:</strong> Trust, professionalism (banks, social media)</li>
+<li><strong>Red:</strong> Urgency, importance (errors, sales, delete actions)</li>
+<li><strong>Green:</strong> Success, positivity (confirmations, eco-friendly)</li>
+<li><strong>Yellow/Orange:</strong> Warmth, friendliness (warnings, highlights)</li>
+</ul>
+<h3 id="activity-51-critique-and-redesign">📝 Activity 5.1: Critique and Redesign</h3>
+<div class="admonition info">
+<p class="admonition-title">UI/UX Improvements</p>
+<p><strong>Duration:</strong> 20 minutes</p>
+<p><strong>Learning Goal:</strong> Synthesise UX/UI knowledge to perform professional-level critiques and propose evidence-based improvements</p>
+<p><strong>Part A: Critical Analysis (10 minutes)</strong></p>
+<p>Visit a website or app that you find frustrating to use. Perform a comprehensive analysis:</p>
+<p>Create two tables:</p>
+<p><strong>UI Issues Table:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Issue #</th>
+<th>UI Element</th>
+<th>Design Principle Violated</th>
+<th>Specific Problem</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Submit button</td>
+<td>Visibility</td>
+<td>Button is grey on grey background, hard to see</td>
+<td>Contrast ratio is only 1.8:1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>UX Issues Table:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Issue #</th>
+<th>UX Principle</th>
+<th>Specific Problem</th>
+<th>Impact on User</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Usability</td>
+<td>Checkout requires 7 separate pages</td>
+<td>Users abandon cart, takes 5+ minutes</td>
+<td>Average time to complete: 5 min 43 sec</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Success Check:</strong> You have:</p>
+<ul>
+<li>3 UI issues with specific principles named</li>
+<li>3 UX issues with specific principles named</li>
+<li>Evidence for each (not just opinions)</li>
+<li>Clear explanation of user impact</li>
+</ul>
+<p><strong>Part B: Redesign (10 minutes)</strong></p>
+<p>Choose the <strong>most critical problem</strong> from your analysis.</p>
+<p>Create a redesign proposal including:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Your Redesign</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Problem being solved</td>
+<td>[State clearly]</td>
+</tr>
+<tr>
+<td>Current design sketch/description</td>
+<td>[What it looks like now]</td>
+</tr>
+<tr>
+<td>New design sketch/description</td>
+<td>[What your solution looks like]</td>
+</tr>
+<tr>
+<td>Design principles applied</td>
+<td>[List at least 2]</td>
+</tr>
+<tr>
+<td>How this improves UX</td>
+<td>[Specific improvements]</td>
+</tr>
+<tr>
+<td>How you would test this works</td>
+<td>[Specific test method]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Success Check:</strong> You've completed this when:</p>
+<ul>
+<li>Your redesign directly addresses the identified problem</li>
+<li>You've applied at least 2 specific design principles</li>
+<li>You can explain exactly how the user experience improves</li>
+<li>Your test method would provide measurable results</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Sketching Tips</p>
+<ul>
+<li>Use boxes and simple shapes</li>
+<li>Label everything clearly</li>
+<li>Use arrows to show interactions</li>
+<li>Don't worry about artistic skill — clarity matters more!</li>
+<li>Include annotations explaining what elements do</li>
+</ul>
+</div>
+</div>
+<h3 id="activity-52-design-thinking-vocabulary-journal">📝 Activity 5.2: Design Thinking Vocabulary Journal</h3>
+<div class="admonition info">
+<p class="admonition-title">Industry Vocabulary</p>
+<p><strong>Duration:</strong> 15 minutes</p>
+<p><strong>Learning Goal:</strong> Build personal reference material demonstrating deep understanding of key concepts</p>
+<p>Create a <strong>Design Thinking Vocabulary Journal</strong> that you'll use throughout the term.</p>
+<p>For each term below, create an entry with:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>My Definition</th>
+<th>Real-World Example</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Affordance</td>
+<td>Visual or physical cues that suggest how to use something</td>
+<td>A door handle shaped like a bar suggests "pull"</td>
+<td>Helps users understand interfaces without instructions</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Terms to define:</strong></p>
+<ol>
+<li>User Interface (UI)</li>
+<li>User Experience (UX)</li>
+<li>Empathy (in design context)</li>
+<li>Prototype</li>
+<li>Iteration</li>
+<li>Affordance</li>
+<li>Usability</li>
+<li>Accessibility</li>
+<li>User Journey</li>
+<li>Pain Point</li>
+</ol>
+<p><strong>Success Check:</strong> You've completed this when:</p>
+<ul>
+<li>All 10 terms have entries</li>
+<li>Definitions are in your own words (not copied)</li>
+<li>Examples are specific and observable</li>
+<li>"Why it matters" explains value to users or designers</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Why This Matters</p>
+<p>This journal demonstrates your understanding AND gives you a resource for:</p>
+<ul>
+<li>Future projects</li>
+<li>Explaining concepts to others</li>
+<li>Quick reference during assessments</li>
+<li>Portfolio/evidence of learning</li>
+</ul>
+</div>
+</div>
+<hr />
+<h2 id="understanding-check">Understanding Check</h2>
+<p>Before moving forward, ensure you can answer these questions:</p>
+<div class="admonition question">
+<p class="admonition-title">Self-Assessment Checklist</p>
+<p><strong>Foundational Understanding:</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I explain the difference between UI and UX to someone who's never heard these terms, without using jargon?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I give 3 real-world examples showing how UI impacts UX?</li>
+</ul>
+<p><strong>UI Analysis Skills:</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I correctly identify and name at least 5 different UI elements when looking at any app or website?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I explain all 5 UI design principles (consistency, feedback, affordance, constraints, visibility) with examples?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I look at an interface and identify which principles are being used well or poorly?</li>
+</ul>
+<p><strong>UX Evaluation Skills:</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I describe all 6 UX principles and explain why each matters?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I evaluate an app/website against these principles with specific evidence?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I identify pain points in a user journey and explain their impact?</li>
+</ul>
+<p><strong>Design Thinking Application:</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I name all 5 stages of design thinking in order?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I explain what happens at each stage?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I apply the complete design thinking process to a simple problem?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Do I understand why iteration (going back to earlier stages) is valuable?</li>
+</ul>
+<p><strong>Critical Analysis:</strong></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I critique an interface using correct UX/UI terminology?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I support my critiques with specific, observable evidence?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I propose improvements that apply appropriate design principles?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Can I explain how my proposed changes would improve the user experience?</li>
+</ul>
+</div>
+<p><strong>If you answered "no" to any of these:</strong></p>
+<ol>
+<li>Note which section it relates to</li>
+<li>Review that content section</li>
+<li>Redo the relevant activity</li>
+<li>Test yourself again</li>
+</ol>
+<hr />
+<div class="quiz" data-show-correct="true" data-auto-submit="true" data-disable-after-submit="true" id="quiz-0">
+                <a href="#quiz-0" class="quiz-header-link">#</a>
+
+                <div class="quiz-question">
+                    <p><strong>Question 1: What is the main difference between UI and UX?</strong></p>
+                </div>
+                <form>
+                    <fieldset><div><input type="radio" name="answer" value="0" id="quiz-0-0" ><label for="quiz-0-0">UI is for mobile apps, UX is for websites</label></div><div><input type="radio" name="answer" value="1" id="quiz-0-1" ><label for="quiz-0-1">UI focuses on colours, UX focuses on buttons</label></div><div><input type="radio" name="answer" value="2" id="quiz-0-2" correct><label for="quiz-0-2">UI is the visual and interactive elements users see, UX is the overall experience users have</label></div><div><input type="radio" name="answer" value="3" id="quiz-0-3" ><label for="quiz-0-3">UI and UX are two different names for the same thing</label></div></fieldset>
+                    <div class="quiz-feedback hidden"></div>
+
+                </form>
+                <section class="content hidden"><hr />
+<p><strong>Explanation</strong></p>
+<p>UI (User Interface) refers to the specific visual and interactive elements that users see and interact with—buttons, menus, icons, typography, and layouts. UX (User Experience) encompasses the entire experience a user has when interacting with a product, including how they feel, how easy it is to accomplish tasks, and whether the product meets their needs.</p>
+<ul>
+<li>Option A is incorrect - Both UI and UX apply to all digital platforms</li>
+<li>Option B is incorrect - This oversimplifies both concepts; UI includes all visual elements, not just colours, and UX is about the complete experience, not just buttons</li>
+<li>Option D is incorrect - UI and UX are related but distinct concepts that work together</li>
+</ul></section>
+            </div>
+
+<div class="quiz" data-show-correct="true" data-auto-submit="true" data-disable-after-submit="true" id="quiz-1">
+                <a href="#quiz-1" class="quiz-header-link">#</a>
+
+                <div class="quiz-question">
+                    <p><strong>Question 2: Which UI design principle is violated when a website has a "Submit" button that looks exactly the same as a "Cancel" button?</strong></p>
+                </div>
+                <form>
+                    <fieldset><div><input type="radio" name="answer" value="0" id="quiz-1-0" ><label for="quiz-1-0">Feedback</label></div><div><input type="radio" name="answer" value="1" id="quiz-1-1" correct><label for="quiz-1-1">Consistency</label></div><div><input type="radio" name="answer" value="2" id="quiz-1-2" ><label for="quiz-1-2">Affordance</label></div><div><input type="radio" name="answer" value="3" id="quiz-1-3" ><label for="quiz-1-3">Visibility</label></div></fieldset>
+                    <div class="quiz-feedback hidden"></div>
+
+                </form>
+                <section class="content hidden"><hr />
+<p><strong>Explanation</strong></p>
+<p>Consistency means that similar actions should look similar, and different actions should look different. When "Submit" and "Cancel" buttons look identical, users cannot distinguish between a safe action and a potentially destructive one, violating the principle of consistency. Different actions with different consequences should have distinct visual treatments.</p>
+<ul>
+<li>Option A (Feedback) is incorrect - Feedback relates to the system informing users about what's happening, not about visual differentiation</li>
+<li>Option C (Affordance) is incorrect - Affordance is about design suggesting how to use an element (e.g., buttons looking clickable)</li>
+<li>Option D (Visibility) is incorrect - Visibility is about important information being easily discoverable, not about distinguishing between different actions</li>
+</ul></section>
+            </div>
+
+<div class="quiz" data-show-correct="true" data-auto-submit="true" data-disable-after-submit="true" id="quiz-2">
+                <a href="#quiz-2" class="quiz-header-link">#</a>
+
+                <div class="quiz-question">
+                    <p><strong>Question 3: A student is evaluating a shopping app and notes: "The search function is hard to find, buried in a menu. Product categories have confusing names. The checkout process is easy once you find products." Which UX principle is MOST problematic?</strong></p>
+                </div>
+                <form>
+                    <fieldset><div><input type="radio" name="answer" value="0" id="quiz-2-0" ><label for="quiz-2-0">Usability</label></div><div><input type="radio" name="answer" value="1" id="quiz-2-1" ><label for="quiz-2-1">Accessibility</label></div><div><input type="radio" name="answer" value="2" id="quiz-2-2" correct><label for="quiz-2-2">Findability</label></div><div><input type="radio" name="answer" value="3" id="quiz-2-3" ><label for="quiz-2-3">Value</label></div></fieldset>
+                    <div class="quiz-feedback hidden"></div>
+
+                </form>
+                <section class="content hidden"><hr />
+<p><strong>Explanation</strong></p>
+<p>Findability concerns how easily users can locate information and features. The key issues described—hidden search function and confusing category names—directly prevent users from finding what they need. While the checkout works well (good usability), users struggle to navigate and locate products (poor findability).</p>
+<ul>
+<li>Option A (Usability) is partially correct but not the primary issue - The checkout process actually demonstrates good usability once users reach it</li>
+<li>Option B (Accessibility) is incorrect - The scenario doesn't mention issues related to users with diverse abilities</li>
+<li>Option D (Value) is incorrect - There's no indication the app fails to deliver meaningful benefits; the problem is users can't find what they're looking for</li>
+</ul></section>
+            </div>
+
+<div class="quiz" data-show-correct="true" data-auto-submit="true" data-disable-after-submit="true" id="quiz-3">
+                <a href="#quiz-3" class="quiz-header-link">#</a>
+
+                <div class="quiz-question">
+                    <p><strong>Question 4: During the Empathise stage of design thinking for a library app redesign, which activity would be MOST valuable?</strong></p>
+                </div>
+                <form>
+                    <fieldset><div><input type="radio" name="answer" value="0" id="quiz-3-0" ><label for="quiz-3-0">Creating three different colour schemes for the interface</label></div><div><input type="radio" name="answer" value="1" id="quiz-3-1" ><label for="quiz-3-1">Writing a detailed list of all features the app should have</label></div><div><input type="radio" name="answer" value="2" id="quiz-3-2" correct><label for="quiz-3-2">Observing students using the current library system and noting where they struggle</label></div><div><input type="radio" name="answer" value="3" id="quiz-3-3" ><label for="quiz-3-3">Sketching wireframes of potential solutions</label></div></fieldset>
+                    <div class="quiz-feedback hidden"></div>
+
+                </form>
+                <section class="content hidden"><hr />
+<p><strong>Explanation</strong></p>
+<p>The Empathise stage focuses on understanding user needs, experiences, and motivations through observation and research, not creating solutions. Watching students interact with the current system reveals actual pain points and behaviours that inform later design decisions.</p>
+<ul>
+<li>Option A is incorrect - Choosing colour schemes happens during the Prototype stage after you've defined the problem and generated ideas</li>
+<li>Option B is incorrect - Listing features is jumping to solutions before understanding user needs; this might happen during Ideate, but only after proper empathy research</li>
+<li>Option D is incorrect - Sketching wireframes occurs during the Prototype stage, which comes after Empathise, Define, and Ideate</li>
+</ul></section>
+            </div>
+
+<div class="quiz" data-show-correct="true" data-auto-submit="true" data-disable-after-submit="true" id="quiz-4">
+                <a href="#quiz-4" class="quiz-header-link">#</a>
+
+                <div class="quiz-question">
+                    <p><strong>Question 5: A designer creates a food delivery app with these features:</strong></p>
+<ol>
+<li>bright red "Order Now" buttons</li>
+<li>greyed-out restaurant options that are closed</li>
+<li>a loading spinner when processing payment</li>
+<li>form fields that won't accept invalid postcodes. </li>
+</ol>
+<p><strong>Analyse which design principles are demonstrated:</strong></p>
+                </div>
+                <form>
+                    <fieldset><div><input type="radio" name="answer" value="0" id="quiz-4-0" correct><label for="quiz-4-0">Visibility, Constraints, and Feedback are all demonstrated</label></div><div><input type="radio" name="answer" value="1" id="quiz-4-1" ><label for="quiz-4-1">Only Visibility and Feedback are demonstrated</label></div><div><input type="radio" name="answer" value="2" id="quiz-4-2" ><label for="quiz-4-2">Only Constraints and Affordance are demonstrated  </label></div><div><input type="radio" name="answer" value="3" id="quiz-4-3" ><label for="quiz-4-3">All five design principles are demonstrated</label></div></fieldset>
+                    <div class="quiz-feedback hidden"></div>
+
+                </form>
+                <section class="content hidden"><hr />
+<p><strong>Explanation</strong></p>
+<p>Let's analyse each feature:</p>
+<ol>
+<li>Bright red buttons = <strong>Visibility</strong> (important actions are prominent)</li>
+<li>Greyed-out closed restaurants = <strong>Constraints</strong> (preventing users from selecting unavailable options)</li>
+<li>Loading spinner during payment = <strong>Feedback</strong> (system informs users what's happening)</li>
+<li>Form validation on postcodes = <strong>Constraints</strong> (preventing errors)</li>
+</ol>
+<p>The scenario demonstrates Visibility, Constraints, and Feedback. However, there's no evidence of Consistency (similar actions looking similar across the app) or Affordance (elements suggesting how to use them).</p>
+<ul>
+<li>Option A is incorrect - Constraints are also demonstrated through the greyed-out options and form validation</li>
+<li>Option B is incorrect - Visibility is also demonstrated through the prominent red buttons, and Feedback through the loading spinner</li>
+<li>Option D is incorrect - There's no mention of Consistency or Affordance in the examples given</li>
+</ul></section>
+            </div>
+
+<div class="quiz" data-show-correct="true" data-auto-submit="true" data-disable-after-submit="true" id="quiz-5">
+                <a href="#quiz-5" class="quiz-header-link">#</a>
+
+                <div class="quiz-question">
+                    <p><strong>Question 6: A team is redesigning a school canteen ordering system. After empathising with students, they created this problem statement: "Students want a mobile app with QR codes, touchscreen menus, and Apple Pay because technology is modern and convenient." Evaluate this problem statement and propose how to improve it:</strong></p>
+                </div>
+                <form>
+                    <fieldset><div><input type="radio" name="answer" value="0" id="quiz-5-0" ><label for="quiz-5-0">This is a good problem statement because it identifies specific solutions students want (e.g., "Students want pre-ordering capability, visual menu displays, and multiple payment options because waiting in queues is frustrating")</label></div><div><input type="radio" name="answer" value="1" id="quiz-5-1" ><label for="quiz-5-1">This problem statement should focus more on which payment methods to support (e.g., "Students need support for Apple Pay, Google Pay, cash, and card payments because different students have different payment preferences")</label></div><div><input type="radio" name="answer" value="2" id="quiz-5-2" correct><label for="quiz-5-2">This problem statement is solution-focused rather than need-focused; it should identify the underlying user need (e.g., "Students need a faster ordering process during 30-minute lunch breaks because current queues mean they miss out on eating")</label></div><div><input type="radio" name="answer" value="3" id="quiz-5-3" ><label for="quiz-5-3">This problem statement needs more technical details about how the QR codes will work (e.g., "Students need a QR code system using Code 128 format that generates unique order IDs and integrates with the existing POS system")</label></div></fieldset>
+                    <div class="quiz-feedback hidden"></div>
+
+                </form>
+                <section class="content hidden"><hr />
+<p><strong>Explanation</strong></p>
+<p>The Define stage of design thinking requires creating problem statements that focus on <strong>user needs</strong>, not solutions. The given statement jumps straight to specific technologies (app, QR codes, Apple Pay) without articulating the actual problem students face. A proper problem statement follows the format: "[User] needs [need] because [insight]."</p>
+<p>The improved version identifies:</p>
+<ul>
+<li><strong>Who</strong>: Students</li>
+<li><strong>Need</strong>: Faster ordering process</li>
+<li><strong>Why it matters</strong>: Limited lunch time means they currently miss out</li>
+</ul>
+<p>This format keeps the team focused on solving the real problem (speed) rather than being locked into specific solutions (QR codes, apps) that may or may not address the underlying need.</p>
+<ul>
+<li>Option A is incorrect - Problem statements should focus on needs, not solutions. Listing specific technologies constrains the Ideate stage</li>
+<li>Option B is incorrect - Payment methods are implementation details (solutions), not the core user need</li>
+<li>Option D is incorrect - Technical details belong in the Prototype stage, not in the problem statement</li>
+</ul></section>
+            </div>
+
+<hr />
+<h2 id="teacher-notes">Teacher Notes</h2>
+<details class="note">
+<summary>Differentiation Strategies</summary>
+<p><strong>Simplified Activities:</strong></p>
+<ul>
+<li><strong>Activity Templates:</strong> Provide pre-formatted tables with column headers and one example row completed</li>
+<li><strong>Curated Examples:</strong> Give a list of 5 pre-selected websites with clear good/bad examples to analyse</li>
+<li><strong>Visual Supports:</strong> Create a one-page visual reference guide showing all UI elements and design principles with icons</li>
+<li><strong>Reduced Scope:</strong> Allow analysis of 1-2 principles instead of all 5/6 for initial attempts</li>
+<li><strong>Buddy System:</strong> Pair with a peer for collaborative analysis activities</li>
+</ul>
+<p><strong>Scaffolding Strategies:</strong></p>
+<ul>
+<li><strong>UX/UI Detective Checklist:</strong> <ul>
+<li>"Can I see this element clearly?" (Visibility)</li>
+<li>"Does it look clickable/interactive?" (Affordance)</li>
+<li>"Does the same action look the same everywhere?" (Consistency)</li>
+</ul>
+</li>
+<li><strong>Sentence Starters:</strong><ul>
+<li>"This UI is effective because it uses [principle] by [specific example]..."</li>
+<li>"This creates a poor UX when users [action] because [problem]..."</li>
+<li>"I would improve this by [solution] which would help users [benefit]..."</li>
+</ul>
+</li>
+<li><strong>Step-by-Step Design Thinking Guide:</strong> Break each stage into 3-4 sub-steps with checkboxes</li>
+<li><strong>Worked Examples:</strong> Provide complete examples of good critiques before students attempt their own</li>
+</ul>
+</details>
+<details class="warning">
+<summary>Common Misconceptions</summary>
+<ol>
+<li>
+<p><strong>UI and UX are the same thing</strong></p>
+<p><strong>Reality:</strong> UI is one component that contributes to overall UX. You can have great UI with poor UX (beautiful but unusable), or simple UI with excellent UX (plain but highly functional).</p>
+<p><strong>Teaching Strategy:</strong> </p>
+<ul>
+<li>Use the restaurant analogy consistently throughout</li>
+<li>Show side-by-side examples: Apple (great UI + UX) vs. Craigslist (poor UI but acceptable UX for experienced users)</li>
+<li>Activity: Have students list aspects of their favourite app—sort into UI vs. UX columns</li>
+</ul>
+<p><strong>Assessment:</strong> Ask students to find one example of each scenario (good UI/poor UX and poor UI/good UX)</p>
+</li>
+<li>
+<p><strong>Design thinking is linear</strong></p>
+<p><strong>Reality:</strong> It's an iterative, cyclical process. Testing often reveals new user needs, sending you back to empathise or define. Professional projects cycle through stages multiple times.</p>
+<p><strong>Teaching Strategy:</strong> </p>
+<ul>
+<li>Emphasise arrows going backwards in all diagrams</li>
+<li>Share real case studies: Airbnb's redesign took 3 major iterations; Instagram removed features after testing</li>
+<li>During activities, deliberately introduce "test failure" scenarios requiring students to revisit earlier stages</li>
+<li>Use language: "Let's cycle back" rather than "go backwards"</li>
+</ul>
+<p><strong>Assessment:</strong> Ask "What would you do if users couldn't complete tasks with your prototype?" (Answer should involve returning to earlier stages, not just tweaking the prototype)</p>
+</li>
+<li>
+<p><strong>Good design is purely aesthetic/subjective</strong></p>
+<p><strong>Reality:</strong> While aesthetics matter, good design is primarily about solving problems and meeting user needs. Effectiveness can be measured objectively (task completion rates, time on task, error rates, user satisfaction scores).</p>
+<p><strong>Teaching Strategy:</strong> </p>
+<ul>
+<li>Show data: "Beautiful homepage increased bounce rate by 40% because users couldn't find the search function"</li>
+<li>Introduce metrics: "Good UX means 90%+ users complete checkout in under 3 minutes"</li>
+<li>Compare: Modern art (subjective) vs. UX design (objective measures of success)</li>
+<li>Activity: Rate interfaces on aesthetics AND functionality separately—discuss disconnects</li>
+</ul>
+<p><strong>Assessment:</strong> Require students to include measurable criteria in their redesigns ("This will reduce clicks from 5 to 2" not "This looks better")</p>
+</li>
+<li>
+<p><strong>Users know what they want</strong></p>
+<p><strong>Reality:</strong> Users can describe their problems ("finding information takes too long") but often can't envision solutions. They're also influenced by what they know already. Observation reveals needs users can't articulate.</p>
+<p><strong>Teaching Strategy:</strong> </p>
+<ul>
+<li>Henry Ford quote: "If I had asked people what they wanted, they would have said faster horses"</li>
+<li>Example: iPhone—users didn't ask for touchscreen phones, but it solved problems they had</li>
+<li>Empathise stage focuses on observing behaviour, not just asking "what do you want?"</li>
+<li>Activity: Show students a problem, ask for solutions, then show the innovative solution nobody suggested</li>
+</ul>
+<p><strong>Assessment:</strong> In design thinking activities, problem statements should focus on observed behaviours/needs, not requested features</p>
+</li>
+<li>
+<p><strong>Accessibility is only for people with disabilities</strong></p>
+<p><strong>Reality:</strong> Accessible design benefits everyone in different contexts. Captions help in noisy environments, good contrast helps in bright sunlight, keyboard navigation helps when trackpads fail, simple language helps non-native speakers.</p>
+<p><strong>Teaching Strategy:</strong> </p>
+<ul>
+<li>Demonstrate: Turn off all sound—can you still use YouTube? (captions needed)</li>
+<li>Curb cut effect: Ramps help wheelchair users, parents with prams, delivery workers, travelers with luggage</li>
+<li>Situational disabilities: Broken arm = temporary motor impairment, bright sun = temporary vision impairment</li>
+<li>Activity: Try navigating a website with only keyboard (no mouse)—note difficulties</li>
+</ul>
+<p><strong>Assessment:</strong> When students discuss accessibility, they should mention benefits beyond disability access</p>
+</li>
+<li>
+<p><strong>More features = better UX</strong></p>
+<p><strong>Reality:</strong> Feature bloat overwhelms users. Simple, focused designs often provide better UX. Every added feature increases cognitive load and complexity.</p>
+<p><strong>Teaching Strategy:</strong> </p>
+<ul>
+<li>Compare: WhatsApp (does one thing excellently) vs. Facebook (tries to do everything)</li>
+<li>Hick's Law: Decision time increases with number of options</li>
+<li>Progressive disclosure: Hide advanced features until needed</li>
+<li>Activity: Find examples of apps that removed features and improved (Google homepage, Instagram removing IGTV button)</li>
+</ul>
+<p><strong>Assessment:</strong> Students should justify every feature in their designs ("Users need this because..." not "It would be cool to have...")</p>
+</li>
+<li>
+<p><strong>Design thinking is just brainstorming</strong></p>
+<p><strong>Reality:</strong> Ideation (brainstorming) is only stage 3 of 5. Design thinking is a complete methodology requiring user research, problem definition, prototyping, and testing. The research stages are just as important as idea generation.</p>
+<p><strong>Teaching Strategy:</strong> </p>
+<ul>
+<li>Show time allocation in professional projects: Empathise + Define = 40%, Ideate = 20%, Prototype + Test = 40%</li>
+<li>"Ideas without research = random guessing; Research without prototyping = analysis paralysis"</li>
+<li>Emphasise that bad problem definition leads to solving the wrong problem brilliantly</li>
+</ul>
+<p><strong>Assessment:</strong> Require documentation of all 5 stages with evidence of completing each one</p>
+</li>
+</ol>
+</details>
+<details class="info">
+<summary>Formative Assessment Opportunities</summary>
+<div class="admonition tip">
+<p class="admonition-title">Assessment Strategy 1: Observation During Activities</p>
+<p><strong>What to observe:</strong></p>
+<ul>
+<li><strong>Terminology Use:</strong> Are students using "UI," "UX," "affordance," "usability" correctly in discussions?</li>
+<li><strong>Specificity:</strong> Are examples specific ("The submit button lacks visual feedback") or vague ("The button is bad")?</li>
+<li><strong>Principle Application:</strong> Can students connect observations to learned principles?</li>
+<li><strong>Critical Thinking:</strong> Do they question design choices or just accept them?</li>
+</ul>
+<p><strong>Recording Method:</strong></p>
+<ul>
+<li>Quick checklist with student names and key skills</li>
+<li>Anecdotal notes on standout observations (positive and concerning)</li>
+<li>Voice record reflections immediately after activity</li>
+</ul>
+<p><strong>Intervention Triggers:</strong></p>
+<ul>
+<li>Student uses wrong terminology after multiple corrections → Provide reference sheet</li>
+<li>Can't find examples → Guide to clearer examples (e.g., gov.uk for good design)</li>
+<li>Only surface-level observations → Model deeper analysis with think-aloud</li>
+</ul>
+<p><strong>Sample Observation Checklist:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Student</th>
+<th>Correct Terms</th>
+<th>Specific Examples</th>
+<th>Applies Principles</th>
+<th>Needs Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Student A</td>
+<td>✓</td>
+<td>✓</td>
+<td>Partial</td>
+<td>Consistency principle</td>
+</tr>
+<tr>
+<td>Student B</td>
+<td>✓</td>
+<td>Vague</td>
+<td>✗</td>
+<td>Finding evidence</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Assessment Strategy 2: Activity Artifact Analysis</p>
+<p><strong>Review student work for quality indicators:</strong></p>
+<p><strong>UI/UX Analysis Tables (Activities 2.1, 3.1):</strong></p>
+<ul>
+<li>✓ <strong>Excellent:</strong> Specific observations with correct principle names, measurable evidence, actionable improvements</li>
+<li>~ <strong>Developing:</strong> General observations, some principle confusion, vague improvements</li>
+<li>✗ <strong>Needs Work:</strong> Opinions without evidence, incorrect principles, no improvements suggested</li>
+</ul>
+<p><strong>Design Thinking Challenge (Activity 4.1):</strong></p>
+<ul>
+<li>✓ <strong>Excellent:</strong> All 5 stages completed, problem statement focuses on users, 10+ diverse ideas, testable prototype, specific test plan</li>
+<li>~ <strong>Developing:</strong> Rushed stages, solution-focused problem statement, &lt;10 ideas, unclear prototype, vague testing</li>
+<li>✗ <strong>Needs Work:</strong> Missing stages, no clear problem, few/similar ideas, no prototype detail</li>
+</ul>
+<p><strong>Critique and Redesign (Activity 5.1):</strong></p>
+<ul>
+<li>✓ <strong>Excellent:</strong> Identifies UI and UX issues with evidence, redesign addresses root cause, applies 2+ principles, includes test method</li>
+<li>~ <strong>Developing:</strong> Identifies issues but limited evidence, redesign addresses symptoms not cause, 1 principle, no testing plan</li>
+<li>✗ <strong>Needs Work:</strong> Vague issues, no evidence, redesign doesn't solve problem, no principles applied</li>
+</ul>
+<p><strong>Feedback Approach:</strong></p>
+<ul>
+<li><strong>Inline comments:</strong> Specific praise ("Great use of contrast ratio data!") and targeted questions ("How could you test if this improvement works?")</li>
+<li><strong>Rubric with examples:</strong> Show what excellent/developing/needs work looks like for each criterion</li>
+<li><strong>Feed-forward:</strong> Don't just identify gaps—provide next steps ("Try analysing one more website focusing specifically on consistency")</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Assessment Strategy 3: Self-Assessment Checklist Reflection</p>
+<p><strong>Using the Understanding Check section formatively:</strong></p>
+<p><strong>Implementation:</strong></p>
+<ol>
+<li>Students complete checklist honestly</li>
+<li>For any "no" responses, they note the section and attempt one more activity from that section</li>
+<li>Students write brief reflection: "I struggled with [X] because [reason]. I improved by [action]."</li>
+</ol>
+<p><strong>Teacher Review:</strong></p>
+<ul>
+<li>Students with 0-2 unchecked: Ready to progress</li>
+<li>Students with 3-5 unchecked: Targeted review needed</li>
+<li>Students with 6+ unchecked: Significant gaps—consider 1:1 conferencing</li>
+</ul>
+<p><strong>Adaptive Teaching Based on Results:</strong></p>
+<ul>
+<li><strong>Common gaps (&gt;50% of class):</strong> Re-teach that concept whole-class with different approach</li>
+<li><strong>Small group gaps (3-5 students):</strong> Pull-out session or small group activity</li>
+<li><strong>Individual gaps:</strong> Provide additional resources, extension examples, or peer tutoring</li>
+</ul>
+<p><strong>Self-Assessment Metacognition:</strong></p>
+<ul>
+<li>Students track their own progress over time</li>
+<li>Builds awareness of their learning process</li>
+<li>Develops self-regulation skills</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Assessment Strategy 4: Exit Ticket (End of Lesson)</p>
+<p><strong>3-2-1 Exit Ticket Format:</strong></p>
+<p>Students respond to:</p>
+<ol>
+<li><strong>3 things:</strong> List 3 new terms you learned and can now explain</li>
+<li><strong>2 connections:</strong> Describe 2 ways UI and UX connect or influence each other</li>
+<li><strong>1 question:</strong> What's 1 thing you're still unsure about?</li>
+</ol>
+<p><strong>Alternative Exit Ticket (Choose Your Demonstration):</strong></p>
+<p>Students choose ONE way to demonstrate learning:</p>
+<ul>
+<li>Sketch a UI element that demonstrates 2+ design principles (label them)</li>
+<li>Write a problem statement for a real school issue using design thinking format</li>
+<li>Explain why a specific app has good/poor UX in 3-4 sentences</li>
+<li>Create a mini user journey (5 steps) for an everyday task with satisfaction ratings</li>
+</ul>
+<p><strong>Using Exit Ticket Data:</strong></p>
+<ul>
+<li><strong>Common questions (&gt;5 students):</strong> Address at start of next lesson</li>
+<li><strong>Misconceptions evident:</strong> Plan corrective mini-lesson</li>
+<li><strong>Strong understanding shown:</strong> Ready to apply in next project</li>
+<li><strong>Individual confusion:</strong> Follow up personally or via written feedback</li>
+</ul>
+<p><strong>Efficiency Tips:</strong></p>
+<ul>
+<li>Use Google Forms for digital submission and instant analysis</li>
+<li>Create word cloud from responses to identify patterns</li>
+<li>Share anonymised excellent responses as models</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Assessment Strategy 5: Peer Review Activity</p>
+<p><strong>Structure:</strong></p>
+<ol>
+<li>Students exchange completed analyses (e.g., Activity 3.1 or 5.1)</li>
+<li>Use provided rubric to assess peer work</li>
+<li>Write 2 stars (strengths) and 1 wish (improvement suggestion)</li>
+<li>Discuss feedback with partner</li>
+</ol>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>Students learn from seeing others' work</li>
+<li>Develops evaluation skills by applying criteria</li>
+<li>Creates accountability for quality work</li>
+<li>Provides additional feedback beyond teacher</li>
+</ul>
+<p><strong>Sample Peer Review Prompts:</strong></p>
+<ul>
+<li>"Did my partner provide specific evidence for each claim? Give an example."</li>
+<li>"Which part of my partner's analysis was strongest? Why?"</li>
+<li>"What's one question I have about my partner's redesign?"</li>
+<li>"Did my partner use UX/UI terminology correctly? Circle any terms that seem wrong."</li>
+</ul>
+</div>
+</details>
+<details class="tip">
+<summary>Extension Activities</summary>
+<p><strong>Deep Dive Challenges:</strong></p>
+<ul>
+<li><strong>Design System Research:</strong> Study Material Design or iOS guidelines; create a 10-minute presentation on key principles with live demonstrations</li>
+<li><strong>Full Design Cycle:</strong> Complete entire design thinking process for a real school problem, from research through to working prototype, including user testing with 5+ students</li>
+<li><strong>Accessibility Audit:</strong> Learn WCAG 2.1 standards; conduct comprehensive accessibility audit of school website using automated tools (WAVE, axe) and manual testing; present findings with priority recommendations</li>
+<li><strong>Comparative Analysis:</strong> Research how UX/UI differs across cultures (e.g., Chinese vs. Western apps); create visual presentation showing design pattern differences and cultural reasons</li>
+<li><strong>Historical Evolution:</strong> Track UI/UX evolution of a major platform (Facebook, YouTube, Twitter) over 10+ years; analyse what changed and why</li>
+<li><strong>Prototype Development:</strong> Learn Figma or Adobe XD; create fully interactive prototype with multiple screens and user flows</li>
+</ul>
+<p><strong>Career Exploration:</strong></p>
+<ul>
+<li>Research UX/UI career paths (UX Researcher, UI Designer, Interaction Designer, etc.)</li>
+<li>Interview a professional designer (via email or video call)</li>
+<li>Complete online UX course (Google UX Design Certificate has free options)</li>
+<li>Build portfolio of 3-5 redesign projects with full documentation</li>
+</ul>
+<p><strong>Advanced Technical Tasks:</strong></p>
+<ul>
+<li>Implement responsive design using HTML/CSS media queries</li>
+<li>Conduct A/B testing on design variations</li>
+<li>Learn about eye-tracking studies and heat maps</li>
+<li>Study cognitive psychology principles underlying UX (Hick's Law, Fitts's Law, Miller's Law)</li>
+</ul>
+</details>
+<h3 id="links-to-prior-learning">Links to Prior Learning</h3>
+<details class="info">
+<summary>Connecting to Week 1: Introduction to Interactive Media</summary>
+<p><strong>Activation Strategies:</strong></p>
+<ul>
+<li><strong>Opening Hook:</strong> "In Week 1, we explored different types of interactive media—blogs, videos, gaming. Today we'll learn why some are more engaging than others: UX and UI design."</li>
+<li><strong>Recall Activity:</strong> "List 3 interactive media platforms you use. Which is easiest to use? Which is most frustrating? What makes the difference?"</li>
+<li><strong>Bridge Concept:</strong> Every interactive media form has an interface (how you interact) and an experience (how it feels)</li>
+</ul>
+<p><strong>Application Throughout Lesson:</strong></p>
+<ul>
+<li>When analysing apps, reference: "Remember how we discussed blogs communicating information? The UI makes that communication clear or confusing."</li>
+<li>UI/UX examples drawn from interactive media types already familiar</li>
+<li>Design thinking can improve any interactive media project</li>
+</ul>
+<p><strong>Explicit Connections:</strong></p>
+<ul>
+<li>Blogs: UI = layout, typography, navigation; UX = readability, findability</li>
+<li>Online video: UI = play button, timeline, volume; UX = buffering experience, recommendation quality</li>
+<li>Gaming: UI = controls, HUD; UX = difficulty curve, feedback systems</li>
+</ul>
+</details>
+<details class="info">
+<summary>Connecting to Week 2: Interactive Media in Enterprise</summary>
+<p><strong>Activation Strategies:</strong></p>
+<ul>
+<li><strong>Opening Hook:</strong> "Last week we saw how enterprises use interactive media for training, communication, and tracking. But what happens when the training app is frustrating to use?"</li>
+<li><strong>Recall Activity:</strong> "What enterprise interactive media did we discuss? (Simulation, AR/VR training, delivery tracking, communication apps) How important is ease of use in these contexts?"</li>
+<li><strong>Real Consequence:</strong> Poor UX in enterprise = lost productivity, training failures, safety issues</li>
+</ul>
+<p><strong>Application Throughout Lesson:</strong></p>
+<ul>
+<li>Enterprise examples for UX principles: "Delivery drivers need high usability—they use apps while moving, in varying light, often with gloves"</li>
+<li>Design thinking in enterprise: "Companies use this process to design internal tools that employees actually want to use"</li>
+<li>ROI connection: "Good UX saves enterprises money—less training time, fewer errors, higher adoption"</li>
+</ul>
+<p><strong>Explicit Connections:</strong></p>
+<ul>
+<li>AR training apps need intuitive UI (workers can't read manuals mid-task)</li>
+<li>Delivery tracking requires high visibility and feedback (customers checking status repeatedly)</li>
+<li>Communication platforms need excellent findability (can't waste time searching for information)</li>
+<li>Gamification in training requires careful UX balance (engaging but not distracting)</li>
+</ul>
+</details>
+<h2 id="next-steps">Next Steps</h2>
+<div class="admonition success">
+<p class="admonition-title">Congratulations!</p>
+<p>You've completed Week 3: Understanding User Experience (UX) and User Interface (UI).</p>
+<p><strong>You have developed the ability to:</strong></p>
+<ul>
+<li>Analyse digital interfaces using professional UX/UI frameworks</li>
+<li>Apply design thinking methodology to solve user-centred problems</li>
+<li>Critique existing designs with evidence-based reasoning</li>
+<li>Propose improvements grounded in established design principles</li>
+<li>Communicate using industry-standard UX/UI terminology</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Continue Building Your Skills</p>
+<p><strong>Daily Practice:</strong></p>
+<ul>
+<li>Notice UI/UX in every app and website you use—what works well? What frustrates you?</li>
+<li>Take screenshots of good and bad examples to build a personal reference library</li>
+<li>Add to your vocabulary journal when you encounter new terms</li>
+<li>Try sketching improved versions of poorly designed interfaces</li>
+</ul>
+<p><strong>Mindset Shift:</strong></p>
+<ul>
+<li>Before solving problems, ask "What do users actually need?" (Empathise first)</li>
+<li>Question your assumptions—test with real users when possible</li>
+<li>Remember: Beautiful ≠ Usable. Both matter.</li>
+<li>Every design decision should serve the user, not just look good</li>
+</ul>
+</div>
+<hr />
+<h2 id="additional-resources">Additional Resources</h2>
+<div class="admonition info">
+<p class="admonition-title">Want to Learn More?</p>
+<p><strong>Articles and Websites:</strong></p>
+<ul>
+<li><a href="https://www.nngroup.com/articles/">Nielsen Norman Group</a> - Industry-leading UX research and articles</li>
+<li><a href="https://lawsofux.com/">Laws of UX</a> - Visual guide to psychological principles in UX</li>
+<li><a href="https://material.io/design">Material Design Guidelines</a> - Google's comprehensive design system</li>
+<li><a href="https://alistapart.com/">A List Apart</a> - Articles on web design and UX</li>
+<li><a href="https://www.smashingmagazine.com/category/ux/">Smashing Magazine UX</a> - Tutorials and case studies</li>
+</ul>
+<p><strong>Books (Available in many school libraries):</strong></p>
+<ul>
+<li>"Don't Make Me Think" by Steve Krug - UX fundamentals</li>
+<li>"The Design of Everyday Things" by Don Norman - Psychology of design</li>
+<li>"Sprint" by Jake Knapp - Design thinking in practice</li>
+</ul>
+<p><strong>Videos and Courses:</strong></p>
+<ul>
+<li>Search YouTube: "What is UX Design" for beginner explanations</li>
+<li>Google UX Design Certificate (Coursera) - First module is free</li>
+<li>Interaction Design Foundation - Student discounts available</li>
+</ul>
+<p><strong>Practice Challenges:</strong></p>
+<ul>
+<li><a href="https://www.dailyui.co/">Daily UI Challenge</a> - Daily design prompts (100 days)</li>
+<li><a href="https://uxchallenge.co/">UX Challenge</a> - Practice UX problems with solutions</li>
+<li><a href="https://sharpen.design/">Sharpen Design Challenges</a> - Timed design exercises</li>
+</ul>
+<p><strong>Tools to Explore:</strong></p>
+<ul>
+<li><a href="https://www.figma.com/">Figma</a> - Free design and prototyping (student accounts)</li>
+<li><a href="https://coolors.co/">Coolors</a> - Colour palette generator</li>
+<li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a> - Test colour accessibility</li>
+<li><a href="https://caniuse.com/">Can I Use</a> - Check browser support for web features</li>
+</ul>
+<p><strong>Inspiration:</strong></p>
+<ul>
+<li><a href="https://dribbble.com/">Dribbble</a> - Design showcase</li>
+<li><a href="https://www.behance.net/">Behance</a> - Creative portfolios</li>
+<li><a href="https://www.awwwards.com/">Awwwards</a> - Award-winning web design</li>
+<li><a href="https://goodui.org/">Good UI</a> - Evidence-based design patterns</li>
+</ul>
+</div>
+<p><strong>Coming Up Next:</strong> In Week 4, we'll apply these principles hands-on by designing and prototyping our own interactive media system using wireframing tools and conducting user testing!</p><style type="text/css">.quiz {
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem 0;
+  position: relative;
+}
+/* Set margin-top of first quiz child (skip the header link) */
+.quiz > .quiz-question:first-of-type {
+  margin-top: 0;
+}
+/* Remove top margin from first element inside quiz-question */
+.quiz-question > *:first-child {
+  margin-top: 0;
+}
+.hidden {
+  display: none;
+}
+
+form button {
+  background-color: var(--md-primary-fg-color);
+  border: none;
+  color: var(--md-primary-bg-color);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition:
+    opacity 0.2s,
+    background-color 0.2s;
+}
+
+form button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+form button:disabled {
+  background-color: var(--md-default-fg-color--lighter, #ccc);
+  color: var(--md-default-fg-color--light, #666);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.wrong label,
+.wrong label * {
+  color: #dc3545;
+}
+.correct label,
+.correct label * {
+  color: #198754;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+fieldset input {
+  margin: 0 10px;
+}
+fieldset label {
+  margin: 0 10px;
+}
+
+input[type="radio"].correct {
+  accent-color: #198754;
+}
+input[type="radio"].wrong {
+  accent-color: #dc3545;
+}
+.content {
+  margin: 10px;
+}
+
+/* Quiz feedback message */
+.quiz-feedback {
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.quiz-feedback.correct {
+  background-color: #d1e7dd;
+  border: 1px solid #a3cfbb;
+  color: #198754;
+}
+
+.quiz-feedback.incorrect {
+  background-color: #f8d7da;
+  border: 1px solid #f1aeb5;
+  color: #dc3545;
+}
+
+[data-md-color-scheme="slate"] .quiz-feedback.correct {
+  background-color: #051b11;
+  border: 1px solid #0f5132;
+}
+
+[data-md-color-scheme="slate"] .quiz-feedback.incorrect {
+  background-color: #2c0b0e;
+  border: 1px solid #842029;
+}
+
+/* Quiz header link styling - positioned in top right corner */
+.quiz-header-link {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  opacity: 0;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--md-default-fg-color--light, #888);
+  transition: opacity 0.2s;
+  padding: 0.25rem 0.5rem;
+}
+.quiz:hover .quiz-header-link {
+  opacity: 1;
+}
+
+/* Quiz number header styling */
+.quiz-number {
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Quiz Progress Sidebar - Progress bar styling */
+/* Most styling comes from Material's .md-nav classes */
+#quiz-progress-sidebar {
+  margin-top: 1.5rem;
+}
+/* if config progress_sidebar_position is top, need top padding instead of bottom */
+.md-nav--secondary > #quiz-progress-sidebar:first-child {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 59.9375em) {
+  #quiz-progress-sidebar .md-nav__list {
+    border-left: 3px solid var(--md-default-fg-color--lightest);
+  }
+}
+
+.quiz-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: var(--md-default-fg-color--lightest, rgba(0, 0, 0, 0.07));
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0.2rem 0;
+  display: flex;
+}
+
+.quiz-progress-bar-incorrect {
+  height: 100%;
+  background: rgba(244, 67, 54, 0.8);
+  transition: width 0.3s ease;
+}
+
+.quiz-progress-bar-correct {
+  height: 100%;
+  background: #4caf50;
+  transition: width 0.3s ease;
+}
+
+.quiz-correct-reset {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Mobile Quiz Progress Tracker */
+/* Shows under navbar on mobile, hidden on desktop */
+.quiz-progress-mobile {
+  display: none; /* Hidden by default on desktop */
+  background-color: var(--md-default-bg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest, rgba(0, 0, 0, 0.07));
+  padding: 0.8rem;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: sticky;
+  top: 48px;
+  z-index: 3; /* Below Material header (z-index: 4) but above page content */
+}
+
+/* Show mobile tracker only on small screens (mobile/tablet) */
+/* Material breakpoint: up to 76.1875em (1219px) */
+@media screen and (max-width: 76.1875em) {
+  .quiz-progress-mobile {
+    display: block;
+  }
+}
+
+/* Mobile tracker styling adjustments */
+.quiz-progress-mobile .md-nav__list {
+  padding: 0;
+  margin: 0;
+  max-width: 61rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.quiz-progress-mobile .md-nav__item {
+  margin: 0.3rem 0;
+}
+
+.quiz-progress-mobile .md-nav__link {
+  padding: 0.2rem 0;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz-progress-mobile .quiz-progress-bar {
+  margin: 0.3rem 0;
+}
+
+.quiz-progress-mobile .md-ellipsis {
+  flex: 1;
+}
+
+/* Quiz Intro */
+.quiz-intro {
+  margin: 1rem 0;
+}
+
+.quiz-intro p {
+  margin: 0 0 0.5rem 0;
+}
+
+/* Quiz Results End Screen */
+.quiz-results {
+  border: 1px solid black;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  background-color: var(--md-default-bg-color);
+  transition: all 0.3s ease;
+}
+
+/* Progress state - subtle styling */
+.quiz-results-progress {
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+}
+
+.quiz-results-progress h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--md-default-fg-color);
+}
+
+.quiz-results-stats,
+.quiz-results-correct-stats {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+.quiz-results-answered,
+.quiz-results-correct,
+.quiz-results-total,
+.quiz-results-percentage {
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+}
+
+/* Complete state - bold and prominent styling */
+.quiz-results-complete {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.quiz-results-complete.hidden {
+  display: none;
+}
+
+.quiz-results-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  color: var(--md-default-fg-color);
+}
+
+.quiz-results-score-display {
+  margin: 1.5rem 0;
+}
+
+.quiz-results-score-value {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Score color coding */
+.quiz-results-score-excellent {
+  color: #198754;
+  background-color: rgba(25, 135, 84, 0.1);
+}
+
+.quiz-results-score-good {
+  color: #28a745;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+.quiz-results-score-average {
+  color: #ffc107;
+  background-color: rgba(255, 193, 7, 0.1);
+}
+
+.quiz-results-score-poor {
+  color: #fd7e14;
+  background-color: rgba(253, 126, 20, 0.1);
+}
+
+.quiz-results-score-fail {
+  color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.quiz-results-message {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 1rem 0 2rem 0;
+  color: var(--md-default-fg-color);
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] .quiz-results-score-excellent {
+  color: #4caf50;
+  background-color: rgba(76, 175, 80, 0.15);
+}
+
+[data-md-color-scheme="slate"] .quiz-results-score-good {
+  color: #66bb6a;
+  background-color: rgba(102, 187, 106, 0.15);
+}
+
+[data-md-color-scheme="slate"] .quiz-results-score-average {
+  color: #ffeb3b;
+  background-color: rgba(255, 235, 59, 0.15);
+}
+
+[data-md-color-scheme="slate"] .quiz-results-score-poor {
+  color: #ff9800;
+  background-color: rgba(255, 152, 0, 0.15);
+}
+
+[data-md-color-scheme="slate"] .quiz-results-score-fail {
+  color: #f44336;
+  background-color: rgba(244, 67, 54, 0.15);
+}
+</style><script type="text/javascript">var JSConfetti=function(){"use strict";function t(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}function e(t,e){for(var i=0;i<e.length;i++){var n=e[i];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,n.key,n)}}function i(t,i,n){return i&&e(t.prototype,i),n&&e(t,n),t}function n(t){return+t.replace(/px/,"")}function s(t,e){var i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:0,n=Math.random()*(e-t)+t;return Math.floor(n*Math.pow(10,i))/Math.pow(10,i)}function o(t){return t[s(0,t.length)]}var a=["#fcf403","#62fc03","#f4fc03","#03e7fc","#03fca5","#a503fc","#fc03ad","#fc03c2"];function r(t){return Math.log(t)/Math.log(1920)}var h=function(){function e(i){t(this,e);var n=i.initialPosition,a=i.direction,h=i.confettiRadius,c=i.confettiColors,u=i.emojis,l=i.emojiSize,d=i.canvasWidth,f=s(.9,1.7,3)*r(d);this.confettiSpeed={x:f,y:f},this.finalConfettiSpeedX=s(.2,.6,3),this.rotationSpeed=u.length?.01:s(.03,.07,3)*r(d),this.dragForceCoefficient=s(5e-4,9e-4,6),this.radius={x:h,y:h},this.initialRadius=h,this.rotationAngle="left"===a?s(0,.2,3):s(-.2,0,3),this.emojiSize=l,this.emojiRotationAngle=s(0,2*Math.PI),this.radiusYUpdateDirection="down";var m="left"===a?s(82,15)*Math.PI/180:s(-15,-82)*Math.PI/180;this.absCos=Math.abs(Math.cos(m)),this.absSin=Math.abs(Math.sin(m));var v=s(-150,0),p={x:n.x+("left"===a?-v:v)*this.absCos,y:n.y-v*this.absSin};this.currentPosition=Object.assign({},p),this.initialPosition=Object.assign({},p),this.color=u.length?null:o(c),this.emoji=u.length?o(u):null,this.createdAt=(new Date).getTime(),this.direction=a}return i(e,[{key:"draw",value:function(t){var e=this.currentPosition,i=this.radius,n=this.color,s=this.emoji,o=this.rotationAngle,a=this.emojiRotationAngle,r=this.emojiSize,h=window.devicePixelRatio;n?(t.fillStyle=n,t.beginPath(),t.ellipse(e.x*h,e.y*h,i.x*h,i.y*h,o,0,2*Math.PI),t.fill()):s&&(t.font="".concat(r,"px serif"),t.save(),t.translate(h*e.x,h*e.y),t.rotate(a),t.textAlign="center",t.fillText(s,0,0),t.restore())}},{key:"updatePosition",value:function(t,e){var i=this.confettiSpeed,n=this.dragForceCoefficient,s=this.finalConfettiSpeedX,o=this.radiusYUpdateDirection,a=this.rotationSpeed,r=this.createdAt,h=this.direction,c=e-r;i.x>s&&(this.confettiSpeed.x-=n*t),this.currentPosition.x+=i.x*("left"===h?-this.absCos:this.absCos)*t,this.currentPosition.y=this.initialPosition.y-i.y*this.absSin*c+.00125*Math.pow(c,2)/2,this.rotationSpeed-=this.emoji?1e-4:1e-5*t,this.rotationSpeed<0&&(this.rotationSpeed=0),this.emoji?this.emojiRotationAngle+=this.rotationSpeed*t%(2*Math.PI):"down"===o?(this.radius.y-=t*a,this.radius.y<=0&&(this.radius.y=0,this.radiusYUpdateDirection="up")):(this.radius.y+=t*a,this.radius.y>=this.initialRadius&&(this.radius.y=this.initialRadius,this.radiusYUpdateDirection="down"))}},{key:"getIsVisibleOnCanvas",value:function(t){return this.currentPosition.y<t+100}}]),e}();function c(){var t=document.createElement("canvas");return t.style.position="fixed",t.style.width="100%",t.style.height="100%",t.style.top="0",t.style.left="0",t.style.zIndex="1000",t.style.pointerEvents="none",document.body.appendChild(t),t}function u(t){var e=t.confettiRadius,i=void 0===e?6:e,n=t.confettiNumber,s=void 0===n?t.confettiesNumber||(t.emojis?40:250):n,o=t.confettiColors,r=void 0===o?a:o,h=t.emojis,c=void 0===h?t.emojies||[]:h,u=t.emojiSize,l=void 0===u?80:u;return t.emojies&&console.error("emojies argument is deprecated, please use emojis instead"),t.confettiesNumber&&console.error("confettiesNumber argument is deprecated, please use confettiNumber instead"),{confettiRadius:i,confettiNumber:s,confettiColors:r,emojis:c,emojiSize:l}}var l=function(){function e(i){var n=this;t(this,e),this.canvasContext=i,this.shapes=[],this.promise=new Promise((function(t){return n.resolvePromise=t}))}return i(e,[{key:"getBatchCompletePromise",value:function(){return this.promise}},{key:"addShapes",value:function(){var t;(t=this.shapes).push.apply(t,arguments)}},{key:"complete",value:function(){var t;return!this.shapes.length&&(null===(t=this.resolvePromise)||void 0===t||t.call(this),!0)}},{key:"processShapes",value:function(t,e,i){var n=this,s=t.timeDelta,o=t.currentTime;this.shapes=this.shapes.filter((function(t){return t.updatePosition(s,o),t.draw(n.canvasContext),!i||t.getIsVisibleOnCanvas(e)}))}}]),e}();return function(){function e(){var i=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};t(this,e),this.activeConfettiBatches=[],this.canvas=i.canvas||c(),this.canvasContext=this.canvas.getContext("2d"),this.requestAnimationFrameRequested=!1,this.lastUpdated=(new Date).getTime(),this.iterationIndex=0,this.loop=this.loop.bind(this),requestAnimationFrame(this.loop)}return i(e,[{key:"loop",value:function(){var t,e,i,s,o;this.requestAnimationFrameRequested=!1,t=this.canvas,e=window.devicePixelRatio,i=getComputedStyle(t),s=n(i.getPropertyValue("width")),o=n(i.getPropertyValue("height")),t.setAttribute("width",(s*e).toString()),t.setAttribute("height",(o*e).toString());var a=(new Date).getTime(),r=a-this.lastUpdated,h=this.canvas.offsetHeight,c=this.iterationIndex%10==0;this.activeConfettiBatches=this.activeConfettiBatches.filter((function(t){return t.processShapes({timeDelta:r,currentTime:a},h,c),!c||!t.complete()})),this.iterationIndex++,this.queueAnimationFrameIfNeeded(a)}},{key:"queueAnimationFrameIfNeeded",value:function(t){this.requestAnimationFrameRequested||this.activeConfettiBatches.length<1||(this.requestAnimationFrameRequested=!0,this.lastUpdated=t||(new Date).getTime(),requestAnimationFrame(this.loop))}},{key:"addConfetti",value:function(){for(var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},e=u(t),i=e.confettiRadius,n=e.confettiNumber,s=e.confettiColors,o=e.emojis,a=e.emojiSize,r=this.canvas.getBoundingClientRect(),c=r.width,d=r.height,f=5*d/7,m={x:0,y:f},v={x:c,y:f},p=new l(this.canvasContext),y=0;y<n/2;y++){var g=new h({initialPosition:m,direction:"right",confettiRadius:i,confettiColors:s,confettiNumber:n,emojis:o,emojiSize:a,canvasWidth:c}),C=new h({initialPosition:v,direction:"left",confettiRadius:i,confettiColors:s,confettiNumber:n,emojis:o,emojiSize:a,canvasWidth:c});p.addShapes(g,C)}return this.activeConfettiBatches.push(p),this.queueAnimationFrameIfNeeded(),p.getBatchCompletePromise()}},{key:"clearCanvas",value:function(){this.activeConfettiBatches=[]}},{key:"destroyCanvas",value:function(){this.canvas.remove()}}]),e}()}();
+</script><script type="text/javascript">
+window.mkdocsQuizConfig = {
+  confetti: true,
+  showProgress: true,
+  progressSidebarPosition: "top"
+};
+</script><script type="text/javascript" defer>// Wrap everything in an IIFE to avoid variable redeclaration issues
+// when Material for MkDocs instant navigation reloads the page
+(function () {
+  // Constants
+  const STORAGE_KEY_PREFIX = "quiz_progress_";
+
+  // Confetti instance (will be initialized if enabled)
+  let jsConfetti = null;
+
+  // Store event listeners for cleanup
+  let eventListeners = [];
+
+  // Initialize confetti if enabled
+  if (window.mkdocsQuizConfig && window.mkdocsQuizConfig.confetti) {
+    if (typeof JSConfetti !== "undefined") {
+      jsConfetti = new JSConfetti();
+    }
+  }
+
+  // Function to move quiz progress sidebar into TOC sidebar
+  // This needs to run on every page load for Material instant navigation
+  function repositionSidebar() {
+    // Use requestAnimationFrame to ensure DOM is ready
+    requestAnimationFrame(() => {
+      const sidebar = document.getElementById("quiz-progress-sidebar");
+      const tocSidebar = document.querySelector(".md-sidebar--secondary .md-sidebar__inner .md-nav--secondary");
+
+      if (sidebar && tocSidebar) {
+        // Check if sidebar is already in the correct position
+        // by seeing if it's already a child of tocSidebar
+        if (!tocSidebar.contains(sidebar)) {
+          // Get position from config (default: "top")
+          const position =
+            window.mkdocsQuizConfig && window.mkdocsQuizConfig.progressSidebarPosition
+              ? window.mkdocsQuizConfig.progressSidebarPosition
+              : "top";
+
+          // Move sidebar based on configured position
+          if (position === "bottom") {
+            // Append to the end (below TOC)
+            tocSidebar.appendChild(sidebar);
+          } else {
+            // Default: insert at the top (above TOC)
+            if (tocSidebar.firstChild) {
+              tocSidebar.insertBefore(sidebar, tocSidebar.firstChild);
+            } else {
+              tocSidebar.appendChild(sidebar);
+            }
+          }
+        }
+      }
+    });
+  }
+
+  // Cleanup function to remove event listeners and prevent memory leaks
+  function cleanup() {
+    eventListeners.forEach(({ element, event, handler }) => {
+      element.removeEventListener(event, handler);
+    });
+    eventListeners = [];
+  }
+
+  // Helper function to add tracked event listeners
+  function addTrackedEventListener(element, event, handler) {
+    element.addEventListener(event, handler);
+    eventListeners.push({ element, event, handler });
+  }
+
+  // Global quiz tracker
+  const quizTracker = {
+    quizzes: {},
+    totalQuizzes: 0,
+    answeredQuizzes: 0,
+    correctQuizzes: 0,
+
+    init: function () {
+      this.totalQuizzes = document.querySelectorAll(".quiz").length;
+      this.loadFromStorage();
+      // Initialize wasCompleted based on restored state to prevent confetti on page load
+      // Only fire confetti when completing quizzes in the current session, not from localStorage
+      const progress = this.getProgress();
+      this.wasCompleted = progress.answered === progress.total && progress.total > 0;
+      this.updateDisplay();
+    },
+
+    markQuiz: function (quizId, isCorrect, selectedValues = []) {
+      const wasAnswered = !!this.quizzes[quizId];
+      const wasCorrect = this.wasPreviouslyCorrect(quizId);
+
+      if (!wasAnswered) {
+        this.answeredQuizzes++;
+      }
+
+      this.quizzes[quizId] = {
+        answered: true,
+        correct: isCorrect,
+        selectedValues: selectedValues,
+      };
+
+      if (isCorrect && !wasCorrect) {
+        this.correctQuizzes++;
+      } else if (!isCorrect && wasCorrect) {
+        this.correctQuizzes--;
+      }
+
+      this.saveToStorage();
+      this.updateDisplay();
+    },
+
+    wasPreviouslyCorrect: function (quizId) {
+      return this.quizzes[quizId] && this.quizzes[quizId].correct;
+    },
+
+    resetQuiz: function (quizId) {
+      if (this.quizzes[quizId]) {
+        if (this.quizzes[quizId].correct) {
+          this.correctQuizzes--;
+        }
+        this.answeredQuizzes--;
+        delete this.quizzes[quizId];
+        this.saveToStorage();
+        this.updateDisplay();
+      }
+    },
+
+    resetAllQuiz: function () {
+      this.quizzes = {};
+      this.answeredQuizzes = 0;
+      this.correctQuizzes = 0;
+      this.saveToStorage();
+      this.updateDisplay();
+
+      // Reset all quiz forms on the page
+      document.querySelectorAll(".quiz").forEach((quiz) => {
+        const form = quiz.querySelector("form");
+        const fieldset = form.querySelector("fieldset");
+        const submitButton = form.querySelector('button[type="submit"]');
+        const resetButton = form.querySelector(".quiz-reset-button");
+        const feedbackDiv = form.querySelector(".quiz-feedback");
+        const section = quiz.querySelector("section");
+
+        // Clear all selections
+        const allInputs = fieldset.querySelectorAll('input[name="answer"]');
+        allInputs.forEach((input) => {
+          input.checked = false;
+          input.disabled = false;
+        });
+
+        // Reset colors
+        resetFieldset(fieldset);
+
+        // Hide content section
+        if (section) {
+          section.classList.add("hidden");
+        }
+
+        // Hide feedback message
+        feedbackDiv.classList.add("hidden");
+        feedbackDiv.classList.remove("correct", "incorrect");
+        feedbackDiv.textContent = "";
+
+        // Show submit button, hide reset button
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.classList.remove("hidden");
+        }
+        if (resetButton) {
+          resetButton.classList.add("hidden");
+        }
+      });
+    },
+
+    getProgress: function () {
+      return {
+        total: this.totalQuizzes,
+        answered: this.answeredQuizzes,
+        correct: this.correctQuizzes,
+        percentage: this.totalQuizzes > 0 ? Math.round((this.answeredQuizzes / this.totalQuizzes) * 100) : 0,
+        score: this.totalQuizzes > 0 ? Math.round((this.correctQuizzes / this.totalQuizzes) * 100) : 0,
+      };
+    },
+
+    saveToStorage: function () {
+      try {
+        const pageKey = STORAGE_KEY_PREFIX + window.location.pathname;
+        const data = JSON.stringify(this.quizzes);
+
+        // Check size limit (50KB max to prevent quota issues)
+        if (data.length > 50000) {
+          console.warn("Quiz progress data exceeds size limit, not saving to localStorage");
+          this.showStorageWarning("Quiz progress is too large to save");
+          return;
+        }
+
+        localStorage.setItem(pageKey, data);
+      } catch (e) {
+        // Handle quota exceeded or localStorage disabled
+        console.error("Failed to save quiz progress:", e);
+        this.showStorageWarning(
+          "Unable to save quiz progress. Your browser may have storage disabled or quota exceeded.",
+        );
+      }
+    },
+
+    loadFromStorage: function () {
+      try {
+        const pageKey = STORAGE_KEY_PREFIX + window.location.pathname;
+        const stored = localStorage.getItem(pageKey);
+
+        if (stored) {
+          // Validate size before parsing (50KB max)
+          if (stored.length > 50000) {
+            console.warn("Stored quiz data exceeds size limit, clearing corrupted data");
+            localStorage.removeItem(pageKey);
+            return;
+          }
+
+          const parsed = JSON.parse(stored);
+
+          // Validate structure: should be an object
+          if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) {
+            console.warn("Invalid quiz data structure, clearing corrupted data");
+            localStorage.removeItem(pageKey);
+            return;
+          }
+
+          this.quizzes = parsed;
+
+          // Recalculate counts and validate quiz data structure
+          this.answeredQuizzes = 0;
+          this.correctQuizzes = 0;
+          for (let key in this.quizzes) {
+            const quiz = this.quizzes[key];
+            // Validate each quiz entry has expected structure
+            if (typeof quiz !== "object" || typeof quiz.answered !== "boolean" || typeof quiz.correct !== "boolean") {
+              console.warn("Invalid quiz entry structure, clearing corrupted data");
+              this.quizzes = {};
+              localStorage.removeItem(pageKey);
+              return;
+            }
+
+            if (quiz.answered) {
+              this.answeredQuizzes++;
+            }
+            if (quiz.correct) {
+              this.correctQuizzes++;
+            }
+          }
+        }
+      } catch (e) {
+        // Handle parsing errors or localStorage unavailable
+        console.error("Failed to load quiz progress:", e);
+        const pageKey = STORAGE_KEY_PREFIX + window.location.pathname;
+        try {
+          localStorage.removeItem(pageKey); // Clear corrupted data
+        } catch (cleanupError) {
+          // localStorage might be completely unavailable
+        }
+      }
+    },
+
+    updateDisplay: function () {
+      const progress = this.getProgress();
+      const wasComplete = this.wasCompleted;
+      const isComplete = progress.answered === progress.total && progress.total > 0;
+
+      // Dispatch custom event for sidebar/other UI components
+      window.dispatchEvent(
+        new CustomEvent("quizProgressUpdate", {
+          detail: progress,
+        }),
+      );
+      // Update sidebar if it exists
+      this.updateSidebar();
+      // Update results div if it exists
+      this.updateResultsDiv(progress, isComplete, wasComplete);
+
+      // Track completion state
+      this.wasCompleted = isComplete;
+    },
+
+    updateResultsDiv: function (progress, isComplete, wasComplete) {
+      const resultsDiv = document.getElementById("quiz-results");
+      if (!resultsDiv) return;
+
+      // Update progress section
+      const answeredEl = resultsDiv.querySelector(".quiz-results-answered");
+      const totalEl = resultsDiv.querySelector(".quiz-results-total");
+      const percentageEl = resultsDiv.querySelector(".quiz-results-percentage");
+      const correctEl = resultsDiv.querySelector(".quiz-results-correct");
+
+      if (answeredEl) answeredEl.textContent = progress.answered;
+      if (totalEl) totalEl.textContent = progress.total;
+      if (percentageEl) percentageEl.textContent = progress.percentage + "%";
+      if (correctEl) correctEl.textContent = progress.correct;
+
+      // Handle completion state
+      const progressSection = resultsDiv.querySelector(".quiz-results-progress");
+      const completeSection = resultsDiv.querySelector(".quiz-results-complete");
+
+      if (isComplete) {
+        // Hide progress, show complete
+        if (progressSection) progressSection.classList.add("hidden");
+        if (completeSection) {
+          completeSection.classList.remove("hidden");
+
+          // Update score display
+          const scoreValue = resultsDiv.querySelector(".quiz-results-score-value");
+          const scoreMessage = resultsDiv.querySelector(".quiz-results-message");
+
+          if (scoreValue) {
+            scoreValue.textContent = progress.score + "%";
+
+            // Remove all score classes
+            scoreValue.classList.remove(
+              "quiz-results-score-excellent",
+              "quiz-results-score-good",
+              "quiz-results-score-average",
+              "quiz-results-score-poor",
+              "quiz-results-score-fail",
+            );
+
+            // Add appropriate score class and message
+            let message = "";
+            if (progress.score >= 90) {
+              scoreValue.classList.add("quiz-results-score-excellent");
+              message = "Outstanding! You aced it!";
+            } else if (progress.score >= 75) {
+              scoreValue.classList.add("quiz-results-score-good");
+              message = "Great job! You really know your stuff!";
+            } else if (progress.score >= 60) {
+              scoreValue.classList.add("quiz-results-score-average");
+              message = "Good effort! Keep learning!";
+            } else if (progress.score >= 40) {
+              scoreValue.classList.add("quiz-results-score-poor");
+              message = "Not bad, but there's room for improvement!";
+            } else {
+              scoreValue.classList.add("quiz-results-score-fail");
+              message = "Better luck next time! Keep trying!";
+            }
+
+            if (scoreMessage) scoreMessage.textContent = message;
+          }
+
+          // Trigger confetti and scroll on first completion
+          if (!wasComplete) {
+            // Scroll to results div
+            resultsDiv.scrollIntoView({ behavior: "smooth", block: "center" });
+
+            // Fire confetti if enabled and score is good
+            if (jsConfetti && progress.score >= 10) {
+              setTimeout(() => {
+                jsConfetti.addConfetti();
+              }, 500);
+            }
+          }
+        }
+      } else {
+        // Show progress, hide complete
+        if (progressSection) progressSection.classList.remove("hidden");
+        if (completeSection) completeSection.classList.add("hidden");
+      }
+    },
+
+    updateSidebar: function () {
+      // Update both desktop and mobile sidebars
+      const sidebars = [
+        document.getElementById("quiz-progress-sidebar"),
+        document.getElementById("quiz-progress-mobile"),
+      ];
+
+      sidebars.forEach((sidebar) => {
+        if (sidebar) {
+          const progress = this.getProgress();
+
+          // Update answered count
+          const answeredEl = sidebar.querySelector(".quiz-progress-answered");
+          if (answeredEl) {
+            answeredEl.textContent = progress.answered;
+          }
+
+          // Update answered percentage - desktop only
+          const answeredPercentageEl = sidebar.querySelector(".quiz-progress-answered-percentage");
+          if (answeredPercentageEl && sidebar.id == "quiz-progress-sidebar") {
+            answeredPercentageEl.textContent = progress.percentage + "%";
+          }
+
+          // Update all .quiz-progress-total elements
+          const totalElements = sidebar.querySelectorAll(".quiz-progress-total");
+          totalElements.forEach((el) => {
+            el.textContent = progress.total;
+          });
+
+          // Update correct count
+          const scoreEl = sidebar.querySelector(".quiz-progress-score");
+          if (scoreEl) {
+            scoreEl.textContent = progress.correct;
+          }
+
+          // Update correct denominator (answered count)
+          const scoreTotalEl = sidebar.querySelector(".quiz-progress-score-total");
+          if (scoreTotalEl) {
+            scoreTotalEl.textContent = progress.answered;
+          }
+
+          // Update correct percentage (based on answered quizzes, not total) - desktop only
+          const scorePercentageEl = sidebar.querySelector(".quiz-progress-score-percentage");
+          if (scorePercentageEl && sidebar.id == "quiz-progress-sidebar") {
+            const scorePercentage =
+              progress.answered > 0 ? Math.round((progress.correct / progress.answered) * 100) : 0;
+            scorePercentageEl.textContent = scorePercentage + "%";
+          }
+
+          // Update progress bars (incorrect and correct)
+          const correctBar = sidebar.querySelector(".quiz-progress-bar-correct");
+          const incorrectBar = sidebar.querySelector(".quiz-progress-bar-incorrect");
+
+          if (correctBar && incorrectBar) {
+            const incorrectCount = progress.answered - progress.correct;
+            const correctPercentage = progress.total > 0 ? (progress.correct / progress.total) * 100 : 0;
+            const incorrectPercentage = progress.total > 0 ? (incorrectCount / progress.total) * 100 : 0;
+
+            incorrectBar.style.width = incorrectPercentage + "%";
+            correctBar.style.width = correctPercentage + "%";
+          }
+        }
+      });
+    },
+
+    createSidebar: function () {
+      // Check if progress tracking is enabled
+      const showProgress = window.mkdocsQuizConfig && window.mkdocsQuizConfig.showProgress !== false;
+
+      // Only show sidebar if progress tracking is enabled and there are quizzes
+      if (!showProgress || this.totalQuizzes === 0) {
+        return;
+      }
+
+      // Show both desktop and mobile sidebars
+      const desktopSidebar = document.getElementById("quiz-progress-sidebar");
+      const mobileSidebar = document.getElementById("quiz-progress-mobile");
+
+      if (desktopSidebar) {
+        desktopSidebar.style.display = "";
+      }
+      if (mobileSidebar) {
+        mobileSidebar.style.display = "";
+      }
+
+      // Initialize reset button event listeners
+      const resetLinks = document.querySelectorAll(".quiz-reset-all-link");
+      resetLinks.forEach((resetLink) => {
+        const handler = (e) => {
+          e.preventDefault();
+          if (confirm("Are you sure you want to reset the quiz? This will clear your progress.")) {
+            quizTracker.resetAllQuiz();
+          }
+        };
+        addTrackedEventListener(resetLink, "click", handler);
+      });
+
+      // Update the sidebar with initial values
+      this.updateSidebar();
+    },
+
+    showStorageWarning: function (message) {
+      // Show a warning banner in the progress tracker if it exists
+      const progressSidebar = document.getElementById("quiz-progress-sidebar");
+      if (progressSidebar) {
+        // Check if warning already exists
+        let warningEl = progressSidebar.querySelector(".quiz-storage-warning");
+        if (!warningEl) {
+          warningEl = document.createElement("div");
+          warningEl.className = "quiz-storage-warning";
+          warningEl.style.cssText =
+            "background: #fff3cd; color: #856404; padding: 8px; margin: 8px 0; border-radius: 4px; font-size: 12px; border: 1px solid #ffeaa7;";
+          progressSidebar.insertBefore(warningEl, progressSidebar.firstChild);
+        }
+        warningEl.textContent = message;
+      }
+    },
+  };
+
+  // Initialize tracker
+  quizTracker.init();
+
+  // Reposition sidebar for Material theme TOC integration
+  // Must run on every page load to support instant navigation
+  repositionSidebar();
+
+  // Create sidebar after page loads
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => {
+      repositionSidebar();
+      quizTracker.createSidebar();
+      initializeResultsDiv();
+      initializeIntroResetButtons();
+    });
+  } else {
+    quizTracker.createSidebar();
+    initializeResultsDiv();
+    initializeIntroResetButtons();
+  }
+
+  // Initialize results div reset button
+  function initializeResultsDiv() {
+    const resultsDiv = document.getElementById("quiz-results");
+    if (!resultsDiv) return;
+
+    const resetButton = resultsDiv.querySelector(".quiz-results-reset");
+    if (resetButton) {
+      const handler = () => {
+        if (confirm("Are you sure you want to reset the quiz? This will clear your progress.")) {
+          quizTracker.resetAllQuiz();
+        }
+      };
+      addTrackedEventListener(resetButton, "click", handler);
+    }
+  }
+
+  // Initialize intro reset buttons
+  function initializeIntroResetButtons() {
+    const introResetButtons = document.querySelectorAll(".quiz-intro-reset");
+    introResetButtons.forEach((button) => {
+      const handler = () => {
+        if (confirm("Are you sure you want to reset the quiz? This will clear your progress.")) {
+          quizTracker.resetAllQuiz();
+        }
+      };
+      addTrackedEventListener(button, "click", handler);
+    });
+  }
+
+  document.querySelectorAll(".quiz").forEach((quiz) => {
+    let form = quiz.querySelector("form");
+    let fieldset = form.querySelector("fieldset");
+    let submitButton = form.querySelector('button[type="submit"]');
+    let feedbackDiv = form.querySelector(".quiz-feedback");
+
+    // Get quiz ID from the quiz div itself
+    const quizId = quiz.id;
+
+    // Prevent anchor link from triggering page navigation/reload
+    const headerLink = quiz.querySelector(".quiz-header-link");
+    if (headerLink) {
+      const handler = (e) => {
+        // Let the browser handle the anchor navigation normally
+        // This prevents Material for MkDocs from intercepting it as a page navigation
+        e.stopPropagation();
+      };
+      addTrackedEventListener(headerLink, "click", handler);
+    }
+
+    // Create reset button (initially hidden)
+    let resetButton = document.createElement("button");
+    resetButton.type = "button";
+    resetButton.className = "quiz-button quiz-reset-button hidden";
+    resetButton.textContent = "Try Again";
+    if (submitButton) {
+      submitButton.parentNode.insertBefore(resetButton, submitButton.nextSibling);
+    } else {
+      form.appendChild(resetButton);
+    }
+
+    // Restore quiz state from localStorage if available
+    if (quizId && quizTracker.quizzes[quizId]) {
+      const savedState = quizTracker.quizzes[quizId];
+      const section = quiz.querySelector("section");
+      const allAnswers = fieldset.querySelectorAll('input[name="answer"]');
+      const correctAnswers = fieldset.querySelectorAll('input[name="answer"][correct]');
+
+      if (savedState.answered) {
+        // Restore selected answers based on saved values
+        if (savedState.selectedValues && savedState.selectedValues.length > 0) {
+          allAnswers.forEach((input) => {
+            if (savedState.selectedValues.includes(input.value)) {
+              input.checked = true;
+            }
+          });
+        }
+
+        if (savedState.correct) {
+          // Show the content section
+          section.classList.remove("hidden");
+
+          // Only mark the correct answers in green (don't highlight wrong answers)
+          allAnswers.forEach((input) => {
+            if (input.hasAttribute("correct")) {
+              input.parentElement.classList.add("correct");
+            }
+          });
+
+          // Show correct feedback
+          feedbackDiv.classList.remove("hidden", "incorrect");
+          feedbackDiv.classList.add("correct");
+          feedbackDiv.textContent = "Correct answer!";
+
+          // Disable inputs if disable-after-submit is enabled
+          if (quiz.hasAttribute("data-disable-after-submit")) {
+            allAnswers.forEach((input) => {
+              input.disabled = true;
+            });
+            if (submitButton) {
+              submitButton.disabled = true;
+            }
+            resetButton.classList.add("hidden");
+          } else {
+            // Show reset button, hide submit button
+            resetButton.classList.remove("hidden");
+            if (submitButton) {
+              submitButton.classList.add("hidden");
+            }
+          }
+        } else {
+          // Restore incorrect answer state
+          const selectedInputs = Array.from(allAnswers).filter((input) =>
+            savedState.selectedValues.includes(input.value),
+          );
+
+          // Show the content section for incorrect answers too
+          section.classList.remove("hidden");
+
+          // Mark selected answers
+          selectedInputs.forEach((input) => {
+            if (input.hasAttribute("correct")) {
+              input.parentElement.classList.add("correct");
+            } else {
+              input.parentElement.classList.add("wrong");
+            }
+          });
+
+          // Show correct answers if show-correct is enabled
+          if (quiz.hasAttribute("data-show-correct")) {
+            correctAnswers.forEach((input) => {
+              input.parentElement.classList.add("correct");
+            });
+          }
+
+          // Show incorrect feedback
+          feedbackDiv.classList.remove("hidden", "correct");
+          feedbackDiv.classList.add("incorrect");
+          const canRetry = !quiz.hasAttribute("data-disable-after-submit");
+          feedbackDiv.textContent = canRetry ? "Incorrect answer. Please try again." : "Incorrect answer.";
+
+          // Disable inputs if disable-after-submit is enabled
+          if (quiz.hasAttribute("data-disable-after-submit")) {
+            allAnswers.forEach((input) => {
+              input.disabled = true;
+            });
+            if (submitButton) {
+              submitButton.disabled = true;
+            }
+            resetButton.classList.add("hidden");
+          } else {
+            // Show reset button, hide submit button
+            resetButton.classList.remove("hidden");
+            if (submitButton) {
+              submitButton.classList.add("hidden");
+            }
+          }
+        }
+      }
+    }
+
+    // Auto-submit on radio button change if enabled
+    if (quiz.hasAttribute("data-auto-submit")) {
+      let radioButtons = fieldset.querySelectorAll('input[type="radio"]');
+      radioButtons.forEach((radio) => {
+        const handler = () => {
+          // Trigger form submission
+          form.dispatchEvent(new Event("submit"));
+        };
+        addTrackedEventListener(radio, "change", handler);
+      });
+    }
+
+    // Reset button handler
+    const resetHandler = () => {
+      // Clear all selections
+      const allInputs = fieldset.querySelectorAll('input[name="answer"]');
+      allInputs.forEach((input) => {
+        input.checked = false;
+        input.disabled = false;
+      });
+      // Reset colors
+      resetFieldset(fieldset);
+      // Hide content section
+      let section = quiz.querySelector("section");
+      section.classList.add("hidden");
+      // Hide feedback message
+      feedbackDiv.classList.add("hidden");
+      feedbackDiv.classList.remove("correct", "incorrect");
+      feedbackDiv.textContent = "";
+      // Show submit button, hide reset button
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.classList.remove("hidden");
+      }
+      resetButton.classList.add("hidden");
+      // Update tracker
+      if (quizId) {
+        quizTracker.resetQuiz(quizId);
+      }
+    };
+    addTrackedEventListener(resetButton, "click", resetHandler);
+
+    const submitHandler = (event) => {
+      event.preventDefault();
+      let selectedAnswers = form.querySelectorAll('input[name="answer"]:checked');
+      let correctAnswers = fieldset.querySelectorAll('input[name="answer"][correct]');
+      // Check if all correct answers are selected
+      let is_correct = selectedAnswers.length === correctAnswers.length;
+      Array.from(selectedAnswers).forEach((answer) => {
+        if (!answer.hasAttribute("correct")) {
+          is_correct = false;
+        }
+      });
+      let section = quiz.querySelector("section");
+      // Always show the content section after submission
+      section.classList.remove("hidden");
+
+      if (is_correct) {
+        resetFieldset(fieldset);
+        // Only mark the correct answers in green (don't highlight wrong answers)
+        const allAnswers = fieldset.querySelectorAll('input[name="answer"]');
+        allAnswers.forEach((answer) => {
+          if (answer.hasAttribute("correct")) {
+            answer.parentElement.classList.add("correct");
+          }
+        });
+        // Show correct feedback
+        feedbackDiv.classList.remove("hidden", "incorrect");
+        feedbackDiv.classList.add("correct");
+        feedbackDiv.textContent = "Correct answer!";
+      } else {
+        resetFieldset(fieldset);
+        // Mark wrong fields with colors
+        Array.from(selectedAnswers).forEach((answer) => {
+          if (!answer.hasAttribute("correct")) {
+            answer.parentElement.classList.add("wrong");
+          } else {
+            answer.parentElement.classList.add("correct");
+          }
+        });
+        // If show-correct is enabled, also show all correct answers
+        if (quiz.hasAttribute("data-show-correct")) {
+          correctAnswers.forEach((answer) => {
+            answer.parentElement.classList.add("correct");
+          });
+        }
+        // Show incorrect feedback
+        feedbackDiv.classList.remove("hidden", "correct");
+        feedbackDiv.classList.add("incorrect");
+        // Only show "Please try again" if the quiz is not disabled after submission
+        const canRetry = !quiz.hasAttribute("data-disable-after-submit");
+        feedbackDiv.textContent = canRetry ? "Incorrect answer. Please try again." : "Incorrect answer.";
+      }
+
+      // Update tracker
+      if (quizId) {
+        // Get selected values to save
+        const selectedValues = Array.from(selectedAnswers).map((input) => input.value);
+        quizTracker.markQuiz(quizId, is_correct, selectedValues);
+      }
+
+      // Disable quiz after submission if option is enabled
+      if (quiz.hasAttribute("data-disable-after-submit")) {
+        const allInputs = fieldset.querySelectorAll('input[name="answer"]');
+        allInputs.forEach((input) => {
+          input.disabled = true;
+        });
+        if (submitButton) {
+          submitButton.disabled = true;
+        }
+        // Hide reset button if disable-after-submit is enabled
+        resetButton.classList.add("hidden");
+      } else {
+        // Show reset button and hide submit button
+        resetButton.classList.remove("hidden");
+        if (submitButton) {
+          submitButton.classList.add("hidden");
+        }
+      }
+    };
+    addTrackedEventListener(form, "submit", submitHandler);
+  });
+
+  function resetFieldset(fieldset) {
+    Array.from(fieldset.children).forEach((child) => {
+      child.classList.remove("wrong", "correct");
+    });
+  }
+
+  // Material for MkDocs instant navigation support
+  // Cleanup and reinitialize when navigating between pages
+  if (typeof document$ !== "undefined") {
+    // Material theme with instant navigation is active
+    document$.subscribe(() => {
+      cleanup(); // Remove old event listeners to prevent memory leaks
+      // The IIFE will re-run when the new page content loads
+    });
+  }
+})(); // End of IIFE
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Thanks for your feedback! Help us improve this page by using our <a href="https://github.com/mr-bev/software-engineering-stage6-nsw/issues/new/?title=[Feedback]+Understanding%20UX%20and%20UI+-+/interactive_media/understanding_ux_and_ui/" target="_blank" rel="noopener">feedback form</a>.
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../interactive_media_in_enterprises/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Interactive Media in Enterprises">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Interactive Media in Enterprises
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../networking_systems/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognise your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" checked>
+      <span class="task-list-indicator"></span>
+      Google Analytics
+    </label>
+  </li>
+
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="../../javascripts/feedback.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
