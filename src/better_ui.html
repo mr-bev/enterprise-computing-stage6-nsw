@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Banking UI Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .phone-frame {
+            max-width: 375px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+            border: 12px solid #1a1a1a;
+        }
+        
+        .status-bar {
+            background: #fff;
+            padding: 8px 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .app-header {
+            background: #2c5f8d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .app-header h1 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .app-content {
+            padding: 20px;
+            min-height: 500px;
+        }
+        
+        .payee-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .payee-info {
+            margin-bottom: 20px;
+        }
+        
+        .payee-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #1a1a1a;
+        }
+        
+        .payee-account {
+            font-size: 14px;
+            color: #666;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            align-items: center;
+        }
+        
+        /* PRIMARY ACTION - Larger, prominent, green (safe action) */
+        .primary-button {
+            flex: 2;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 16px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);
+        }
+        
+        .primary-button:hover {
+            background-color: #218838;
+            box-shadow: 0 4px 8px rgba(40, 167, 69, 0.4);
+        }
+        
+        /* DESTRUCTIVE ACTION - Smaller, text-only, red (dangerous action) */
+        .destructive-button {
+            flex: 1;
+            background-color: transparent;
+            color: #dc3545;
+            border: 1px solid #dc3545;
+            padding: 10px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .destructive-button:hover {
+            background-color: #dc3545;
+            color: white;
+        }
+        
+        .destructive-button:active {
+            transform: scale(0.98);
+        }
+        
+        /* Modal overlay for confirmation */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-overlay.active {
+            display: flex;
+        }
+        
+        .modal {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            max-width: 320px;
+            margin: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        
+        .modal h3 {
+            color: #dc3545;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+        
+        .modal p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .modal-cancel {
+            flex: 1;
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .modal-confirm {
+            flex: 1;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .success-box {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        
+        .success-box h3 {
+            color: #155724;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .success-box ul {
+            color: #155724;
+            font-size: 13px;
+            margin-left: 20px;
+        }
+        
+        .success-box li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="status-bar">
+            <span>9:41</span>
+            <span>📶 📡 🔋</span>
+        </div>
+        
+        <div class="app-header">
+            <h1>SecureBank Mobile</h1>
+        </div>
+        
+        <div class="app-content">
+            <h2 style="margin-bottom: 20px; color: #1a1a1a;">Manage Payees</h2>
+            
+            <div class="payee-card">
+                <div class="payee-info">
+                    <div class="payee-name">Sarah Mitchell</div>
+                    <div class="payee-account">BSB: 063-XXX | ACC: ****4521</div>
+                </div>
+                
+                <div class="button-container">
+                    <button class="primary-button" onclick="alert('Transfer Money - Safe action proceeds immediately')">
+                        💸 Transfer Money
+                    </button>
+                    <button class="destructive-button" onclick="showModal('Sarah Mitchell')">
+                        Delete
+                    </button>
+                </div>
+            </div>
+            
+            <div class="payee-card">
+                <div class="payee-info">
+                    <div class="payee-name">James Chen</div>
+                    <div class="payee-account">BSB: 012-XXX | ACC: ****7823</div>
+                </div>
+                
+                <div class="button-container">
+                    <button class="primary-button" onclick="alert('Transfer Money - Safe action proceeds immediately')">
+                        💸 Transfer Money
+                    </button>
+                    <button class="destructive-button" onclick="showModal('James Chen')">
+                        Delete
+                    </button>
+                </div>
+            </div>
+            
+            <div class="success-box">
+                <h3>✅ Improved Design Principles Applied:</h3>
+                <ul>
+                    <li><strong>Consistency:</strong> Green = safe action, Red = dangerous action</li>
+                    <li><strong>Visual hierarchy:</strong> Primary action (Transfer) is larger and more prominent</li>
+                    <li><strong>Constraints:</strong> Delete requires confirmation dialog (try clicking it!)</li>
+                    <li><strong>Affordance:</strong> Button styles suggest their importance and risk level</li>
+                    <li><strong>Feedback:</strong> Hover states show interactivity</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Confirmation Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <h3>⚠️ Delete Payee?</h3>
+            <p>Are you sure you want to delete <strong id="payeeName"></strong>? This action cannot be undone.</p>
+            <div class="modal-buttons">
+                <button class="modal-cancel" onclick="hideModal()">Cancel</button>
+                <button class="modal-confirm" onclick="confirmDelete()">Delete Payee</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showModal(payeeName) {
+            document.getElementById('payeeName').textContent = payeeName;
+            document.getElementById('modalOverlay').classList.add('active');
+        }
+        
+        function hideModal() {
+            document.getElementById('modalOverlay').classList.remove('active');
+        }
+        
+        function confirmDelete() {
+            const payeeName = document.getElementById('payeeName').textContent;
+            alert(`Payee "${payeeName}" has been deleted.`);
+            hideModal();
+        }
+        
+        // Close modal when clicking outside
+        document.getElementById('modalOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                hideModal();
+            }
+        });
+    </script>
+</body>
+</html>
